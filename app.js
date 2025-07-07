@@ -50,17 +50,13 @@ async function loadQuestions() {
     const stored = localStorage.getItem(DATA_KEY);
     if (stored) {
         const all = JSON.parse(stored);
-        // Retornem només preguntes amb 4 opcions
         return all.filter(q => Array.isArray(q.options) && q.options.length === 4);
     }
     const res = await fetch('questions.json');
     const data = await res.json();
-    // Guardem totes les preguntes
     localStorage.setItem(DATA_KEY, JSON.stringify(data));
-    // Retornem només preguntes amb 4 opcions
     return data.filter(q => Array.isArray(q.options) && q.options.length === 4);
 }
-
 
 function saveQuestions(qs) {
     localStorage.setItem(DATA_KEY, JSON.stringify(qs));
@@ -71,6 +67,7 @@ function weightedSample(questions, n) {
     const weighted = questions.map(q => ({ q, weight: maxAsked - q.times_asked }));
     const selected = [];
     const available = [...weighted];
+
     while (selected.length < n && available.length) {
         const total = available.reduce((sum, el) => sum + el.weight, 0);
         let pick = Math.random() * total;
@@ -114,9 +111,11 @@ function showQuestion() {
     els.question.textContent = q.question;
     const opts = shuffle([...q.options]);
     els.options.innerHTML = '';
+
     opts.forEach(opt => {
         const btn = document.createElement('button');
         btn.textContent = opt;
+        btn.dataset.option = opt.trim();  // assegurem correspondència neta
         btn.addEventListener('click', () => selectOption(btn, q));
         const li = document.createElement('li');
         li.appendChild(btn);
@@ -125,26 +124,30 @@ function showQuestion() {
 }
 
 function selectOption(btn, q) {
-    // deshabilitar totes les opcions
     const allButtons = Array.from(els.options.querySelectorAll('button'));
     allButtons.forEach(b => b.disabled = true);
 
-    const isCorrect = btn.textContent === q.answer;
-    if (isCorrect) {
+    const selected = btn.dataset.option;
+    const correctAnswer = q.answer.trim();
+
+    if (selected === correctAnswer) {
         btn.classList.add('correct');
         score.correct++;
     } else {
         btn.classList.add('incorrect');
         score.incorrect++;
-        // marcar la resposta correcta si existeix
-        const correctBtn = allButtons.find(b => b.textContent === q.answer);
-        if (correctBtn) correctBtn.classList.add('correct');
+        // ara cerquem per data-option
+        const correctBtn = allButtons.find(b => b.dataset.option === correctAnswer);
+        if (correctBtn) {
+            correctBtn.classList.add('correct');
+        } else {
+            console.warn('No s\'ha trobat el botó correcte:', correctAnswer);
+        }
     }
 
     els.nextBtn.disabled = false;
     updateScoreboard();
 
-    // augmentar times_asked
     const orig = questions.find(item => item.question === q.question);
     if (orig) orig.times_asked++;
 }
@@ -160,11 +163,13 @@ function finishQuiz() {
     els.resultScreen.classList.remove('hidden');
     const nota = Math.max(0, Math.min(5, score.correct * 0.25 - score.incorrect * 0.083));
     const avg = saveResult(score.correct, score.incorrect, score.blank, nota);
+
     els.result.correct.textContent = score.correct;
     els.result.incorrect.textContent = score.incorrect;
     els.result.blank.textContent = score.blank;
     els.result.score.textContent = nota.toFixed(2);
     els.result.avg.textContent = avg.toFixed(2);
+
     saveQuestions(questions);
 }
 
