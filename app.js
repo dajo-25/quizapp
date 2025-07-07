@@ -115,7 +115,7 @@ function showQuestion() {
     opts.forEach(opt => {
         const btn = document.createElement('button');
         btn.textContent = opt;
-        btn.dataset.option = opt.trim();  // assegurem correspondència neta
+        btn.dataset.option = opt.trim();
         btn.addEventListener('click', () => selectOption(btn, q));
         const li = document.createElement('li');
         li.appendChild(btn);
@@ -130,17 +130,18 @@ function selectOption(btn, q) {
     const selected = btn.dataset.option;
     const correctAnswer = q.answer.trim();
 
+    // Debug logs
+    console.log('Opcions disponibles:', allButtons.map(b => b.dataset.option));
+    console.log('Resposta seleccionada:', selected);
+    console.log('Resposta correcta esperada:', correctAnswer);
+
     if (selected === correctAnswer) {
         btn.classList.add('correct');
         score.correct++;
     } else {
         btn.classList.add('incorrect');
         score.incorrect++;
-        // ara cerquem per data-option
         const correctBtn = allButtons.find(b => b.dataset.option === correctAnswer);
-
-        console.log(b.dataset.option);
-        console.log(correctAnswer);
         if (correctBtn) {
             correctBtn.classList.add('correct');
         } else {
