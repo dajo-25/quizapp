@@ -825,19 +825,6 @@
         "times_asked": 0
     },
     {
-        "question": "Which of the following definitions is incorrect?",
-        "options": [
-            "SAN: Storage Area Network. A special high-speed network that stores and provides  access to large amount of dat",
-            "Consist of switch-arrays, servers and routers",
-            "CAN: Campus Area Network. A network that joins 2 or more LANs together within a  limited are",
-            "Example: University Campus",
-            "MAN: Metropolitan Area Network. Spans over several buildings in a city or town.",
-            "PAN: Personal Area Network. Network that is used in a Personal level. Example:  NFC)"
-        ],
-        "answer": "SAN: Storage Area Network. A special high-speed network that stores and provides",
-        "times_asked": 0
-    },
-    {
         "question": "OSI layer 3 functions are:",
         "options": [
             "Providing services to establish, maintain and terminate connections between layer 4  entities",

@@ -48,12 +48,19 @@ els.retryBtn.addEventListener('click', () => startQuiz());
 
 async function loadQuestions() {
     const stored = localStorage.getItem(DATA_KEY);
-    if (stored) return JSON.parse(stored);
+    if (stored) {
+        const all = JSON.parse(stored);
+        // Retornem només preguntes amb 4 opcions
+        return all.filter(q => Array.isArray(q.options) && q.options.length === 4);
+    }
     const res = await fetch('questions.json');
     const data = await res.json();
+    // Guardem totes les preguntes
     localStorage.setItem(DATA_KEY, JSON.stringify(data));
-    return data;
+    // Retornem només preguntes amb 4 opcions
+    return data.filter(q => Array.isArray(q.options) && q.options.length === 4);
 }
+
 
 function saveQuestions(qs) {
     localStorage.setItem(DATA_KEY, JSON.stringify(qs));
@@ -118,7 +125,10 @@ function showQuestion() {
 }
 
 function selectOption(btn, q) {
-    Array.from(els.options.querySelectorAll('button')).forEach(b => b.disabled = true);
+    // deshabilitar totes les opcions
+    const allButtons = Array.from(els.options.querySelectorAll('button'));
+    allButtons.forEach(b => b.disabled = true);
+
     const isCorrect = btn.textContent === q.answer;
     if (isCorrect) {
         btn.classList.add('correct');
@@ -126,10 +136,15 @@ function selectOption(btn, q) {
     } else {
         btn.classList.add('incorrect');
         score.incorrect++;
-        Array.from(els.options.querySelectorAll('button')).find(b => b.textContent === q.answer).classList.add('correct');
+        // marcar la resposta correcta si existeix
+        const correctBtn = allButtons.find(b => b.textContent === q.answer);
+        if (correctBtn) correctBtn.classList.add('correct');
     }
+
     els.nextBtn.disabled = false;
     updateScoreboard();
+
+    // augmentar times_asked
     const orig = questions.find(item => item.question === q.question);
     if (orig) orig.times_asked++;
 }
