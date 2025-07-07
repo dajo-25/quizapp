@@ -1,412 +1,1926 @@
 [
     {
-        "question": "Quina és la capital de Catalunya?",
-        "options": {
-            "A": "Barcelona",
-            "B": "Girona",
-            "C": "Lleida",
-            "D": "Tarragona"
-        },
-        "answer": "A"
+        "question": "Quina és la darrera adreça de host útil de la subxarxa 145.82.0.0/15?",
+        "options": [
+            "145.82.0.254",
+            "145.83.0.254",
+            "145.82.255.254",
+            "145.83.255.254"
+        ],
+        "answer": "145.83.255.254",
+        "times_asked": 1
     },
     {
-        "question": "Quin any va arribar l'home a la Lluna?",
-        "options": {
-            "A": "1965",
-            "B": "1969",
-            "C": "1972",
-            "D": "1975"
-        },
-        "answer": "B"
+        "question": "La funcionalitat VRF (Virtual Routing and Forwarding) permet:",
+        "options": [
+            "Implementar diferents instàncies de routing en el mateix equip.",
+            "Convertir un router de nivell 3 en un switch de nivell 2",
+            "Dotar de funcionalitats de routing a un switch de nivell 1",
+            "Dotar de funcionalitats de routing a un switch-router"
+        ],
+        "answer": "Implementar diferents instàncies de routing en el mateix equip.",
+        "times_asked": 1
     },
     {
-        "question": "Quin any va arribar l'home a la Lluna?",
-        "options": {
-            "A": "1965",
-            "B": "1969",
-            "C": "1972",
-            "D": "1975"
-        },
-        "answer": "B"
+        "question": "En implementar QoS en una xarxa MPLS, quina afirmació és incorrecta?",
+        "options": [
+            "Cal utilitzar protocols de routing com OSPF o ISIS",
+            "Es canvia l'algorisme LDP pel CSPF",
+            "És obligatori utilitzar protocols de senyalització que suportin QoS, com RSVP",
+            "Cal mecanismes per suportar DiffServ"
+        ],
+        "answer": "Cal utilitzar protocols de routing com OSPF o ISIS",
+        "times_asked": 3
     },
     {
-        "question": "Quin any va arribar l'home a la Lluna?",
-        "options": {
-            "A": "1965",
-            "B": "1969",
-            "C": "1972",
-            "D": "1975"
-        },
-        "answer": "B"
+        "question": "Respecte MPLS, quina afirmació és correcta?",
+        "options": [
+            "DS-MPLS-TE combina tècniques de TE amb QoS en MPLS",
+            "MPLS-TE permet dividir el BW disponible en cada enllaç entre les diferents prioritats",
+            "TE es basa en definir diferents classes de servei dins del mateix VC",
+            "MPLS-TE permet evitar congestions en la xarxa redistribuint convenientment els FEC"
+        ],
+        "answer": "DS-MPLS-TE combina tècniques de TE amb QoS en MPLS",
+        "times_asked": 1
     },
     {
-        "question": "Quin any va arribar l'home a la Lluna?",
-        "options": {
-            "A": "1965",
-            "B": "1969",
-            "C": "1972",
-            "D": "1975"
-        },
-        "answer": "B"
+        "question": "Quina funcionalitat realitza el Router Distinguisher (RD) de les VPN-MPLS?",
+        "options": [
+            "Complementa els routers quan la càrrega computacional és elevada",
+            "Defineix rutes de backup distingint entre diferents prioritats",
+            "Soluciona el problema del solapament d'adreces entre diferents clients",
+            "Determina tècniques de QoS per millorar el servei"
+        ],
+        "answer": "Soluciona el problema del solapament d'adreces entre diferents clients",
+        "times_asked": 4
     },
     {
-        "question": "Quin any va arribar l'home a la Lluna?",
-        "options": {
-            "A": "1965",
-            "B": "1969",
-            "C": "1972",
-            "D": "1975"
-        },
-        "answer": "B"
+        "question": "Respecte el Router Distinguisher (RD) de les VPN-MPLS, quina afirmació és incorrecta?",
+        "options": [
+            "Està format per 32 bits",
+            "Es pot utilitzar com a identificador de la VPN-MPLS",
+            "És el mateix prefix per tots els VRF de la xarxa MPLS",
+            "S'afegeix a les adreces dels clients per evitar solapaments d'espais d'adreçament"
+        ],
+        "answer": "És el mateix prefix per tots els VRF de la xarxa MPLS",
+        "times_asked": 5
     },
     {
-        "question": "Quin any va arribar l'home a la Lluna?",
-        "options": {
-            "A": "1965",
-            "B": "1969",
-            "C": "1972",
-            "D": "1975"
-        },
-        "answer": "B"
+        "question": "Indica la resposta incorrecta sobre els camps “IP Precedence” i “DSCP”:",
+        "options": [
+            "El IP Precedence i el DSCP es troben tant a la capçalera IPv4 com a la d'IPv6",
+            "El IP Precedence permet definir 8 prioritats diferents de tràfic",
+            "El DSCP defineix sis classes diferents de servei AF amb 4 probabilitats de pèrdua de paquets diferents per cada classe",
+            "L'arquitectura DiffServ pot utilitzar tant el IP Precedence com el DSCP"
+        ],
+        "answer": "El DSCP defineix sis classes diferents de servei AF amb 4 probabilitats de pèrdua de paquets diferents per cada classe",
+        "times_asked": 1
     },
     {
-        "question": "Quin any va arribar l'home a la Lluna?",
-        "options": {
-            "A": "1965",
-            "B": "1969",
-            "C": "1972",
-            "D": "1975"
-        },
-        "answer": "B"
+        "question": "Quina afirmació és correcta respecte a les arquitectures de QoS?",
+        "options": [
+            "S'implementen tant a nivell 2 com a nivell 3",
+            "Es classifiquen en dues categories: Serveis Integrats (IntServ) i Serveis Diferenciats (DiffServ)",
+            "MPLS disposa de la seva pròpia arquitectura de QoS, totalment diferent de IntServ/DiffServ",
+            "MPLS implementa l'arquitectura IntServ"
+        ],
+        "answer": "Es classifiquen en dues categories: Serveis Integrats (IntServ) i Serveis Diferenciats (DiffServ)",
+        "times_asked": 5
     },
     {
-        "question": "Quin any va arribar l'home a la Lluna?",
-        "options": {
-            "A": "1965",
-            "B": "1969",
-            "C": "1972",
-            "D": "1975"
-        },
-        "answer": "B"
+        "question": "Pel que fa a l'arquitectura del router PE en un MPLS-VPN, quina afirmació és certa?",
+        "options": [
+            "És una implementació monolítica, amb una única taula de rutes",
+            "Hi ha una VRF per client i una taula de rutes de tot",
+            "Hi ha una VRF global i una taula de rutes global",
+            "Hi ha una VRF per client amb la seva taula de rutes associada i una taula de rutes global"
+        ],
+        "answer": "Hi ha una VRF per client amb la seva taula de rutes associada i una taula de rutes global",
+        "times_asked": 2
     },
     {
-        "question": "Quin any va arribar l'home a la Lluna?",
-        "options": {
-            "A": "1965",
-            "B": "1969",
-            "C": "1972",
-            "D": "1975"
-        },
-        "answer": "B"
+        "question": "Quina afirmació és incorrecta sobre Metro-Ethernet (ME)?",
+        "options": [
+            "ME proporciona connectivitat Ethernet a nivell MAN/WAN, amb els avantatges de cost i escalabilitat propis de l'Ethernet",
+            "ME pot implementar-se sobre diverses tecnologies (p. ex., MPLS, SONET, WiMAX)",
+            "MetroEthernet és la tecnologia preferida actualment enfront del Carrier Ethernet",
+            "ME equival a implementar VPNs de nivell 2 on el protocol transportat és Ethernet"
+        ],
+        "answer": "MetroEthernet és la tecnologia preferida actualment enfront del Carrier Ethernet",
+        "times_asked": 6
     },
     {
-        "question": "Quin any va arribar l'home a la Lluna?",
-        "options": {
-            "A": "1965",
-            "B": "1969",
-            "C": "1972",
-            "D": "1975"
-        },
-        "answer": "B"
+        "question": "Pel que fa a l’arquitectura del router PE en un MPLS-VPN, quina afirmació és certa?",
+        "options": [
+            "És una implementació monolítica, amb una única taula de rutes",
+            "Hi ha una VRF per client i una taula de rutes de tot",
+            "Hi ha una VRF global i una taula de rutes global",
+            "Hi ha una VRF per client amb la seva taula de rutes associada i una taula de rutes global"
+        ],
+        "answer": "Hi ha una VRF per client amb la seva taula de rutes associada i una taula de rutes global",
+        "times_asked": 1
     },
     {
-        "question": "Quin any va arribar l'home a la Lluna?",
-        "options": {
-            "A": "1965",
-            "B": "1969",
-            "C": "1972",
-            "D": "1975"
-        },
-        "answer": "B"
+        "question": "Què és un LSR en MPLS?",
+        "options": [
+            "Un LSR només pot ser un router pur, sense funcions de commutació.",
+            "Un LSR és un dispositiu MPLS que únicament distribueix etiquetes però no reenvia paquets.",
+            "Un LSR és un node MPLS que realitza (alhora) funcions de label switching i de routing.",
+            "Un LSR és un switch que no pot commutar etiquetes."
+        ],
+        "answer": "Un LSR és un node MPLS que realitza (alhora) funcions de label switching i de routing.",
+        "times_asked": 5
     },
     {
-        "question": "Quin any va arribar l'home a la Lluna?",
-        "options": {
-            "A": "1965",
-            "B": "1969",
-            "C": "1972",
-            "D": "1975"
-        },
-        "answer": "B"
+        "question": "En implementar MPLS-VPNs, quina afirmació és incorrecta?",
+        "options": [
+            "Els clients poden utilitzar diferents protocols de routing en les seves pròpies xarxes.",
+            "La xarxa MPLS transporta la informació de routing dels clients de forma aïllada (VRF).",
+            "L’operador implementa un protocol de routing específic per cada client.",
+            "Cal utilitzar un únic protocol de routing entre nodes PE (habitualment MP-BGP)."
+        ],
+        "answer": "L’operador implementa un protocol de routing específic per cada client.",
+        "times_asked": 3
     },
     {
-        "question": "Quin any va arribar l'home a la Lluna?",
-        "options": {
-            "A": "1965",
-            "B": "1969",
-            "C": "1972",
-            "D": "1975"
-        },
-        "answer": "B"
+        "question": "Pel que fa a Serveis MPLS, quina afirmació és correcta?",
+        "options": [
+            "La tecnologia Carrier Ethernet es comporta com un router i el Pseudowire com un switch.",
+            "La tecnologia Metro Ethernet té el mateix comportament que un router i VPLS que un switch.",
+            "La tecnologia VPLS té el mateix comportament que un switch (ja que ofereix un servei de commutació L2).",
+            "Opció falsa"
+        ],
+        "answer": "La tecnologia VPLS té el mateix comportament que un switch (ja que ofereix un servei de commutació L2).",
+        "times_asked": 4
     },
     {
-        "question": "Quin any va arribar l'home a la Lluna?",
-        "options": {
-            "A": "1965",
-            "B": "1969",
-            "C": "1972",
-            "D": "1975"
-        },
-        "answer": "B"
+        "question": "Quina afirmació és certa respecte els routers CE (Customer Edge) en una arquitectura MPLS VPN?",
+        "options": [
+            "Els routers CE són els qui inicien els túnels LSP.",
+            "Els routers CE poden participar en l’intercanvi d’etiquetes MPLS.",
+            "Els routers CE desconeixen totalment l’arquitectura MPLS VPN (no gestionen etiquetes ni veuen la MPLS interna).",
+            "Els routers CE implementen obligatòriament PHB."
+        ],
+        "answer": "Els routers CE desconeixen totalment l’arquitectura MPLS VPN (no gestionen etiquetes ni veuen la MPLS interna).",
+        "times_asked": 0
     },
     {
-        "question": "Quin any va arribar l'home a la Lluna?",
-        "options": {
-            "A": "1965",
-            "B": "1969",
-            "C": "1972",
-            "D": "1975"
-        },
-        "answer": "B"
+        "question": "Quina afirmació és certa sobre MPLS?",
+        "options": [
+            "MPLS integra i relaciona les funcionalitats d’encaminament de nivell 2 amb les funcions de commutació de nivell 3",
+            "Si MPLS funciona sobre Frame Relay, utilitzarà el camp de DLCI com a etiqueta",
+            "Si MPLS funciona sobre Ethernet, afegirà la capçalera genèrica MPLS per poder etiquetar",
+            "En MPLS es prenen decisions d’encaminament a cada salt de la ruta, igual que en IP"
+        ],
+        "answer": "Si MPLS funciona sobre Ethernet, afegirà la capçalera genèrica MPLS per poder etiquetar",
+        "times_asked": 3
     },
     {
-        "question": "Quin any va arribar l'home a la Lluna?",
-        "options": {
-            "A": "1965",
-            "B": "1969",
-            "C": "1972",
-            "D": "1975"
-        },
-        "answer": "B"
+        "question": "Quina afirmació és certa sobre MPLS?",
+        "options": [
+            "MPLS és un protocol dissenyat per transportar paquets multicast sobre una xarxa IP",
+            "Si MPLS funciona sobre PPP, opcionalment es pot afegir una capçalera genèrica MPLS per poder etiquetar",
+            "MPLS pot funcionar sobre IP, perquè el paquet IP té un camp específic per poder etiquetar",
+            "Un LSP és un camí virtual que segueixen tots els paquets assignats a un mateix FEC"
+        ],
+        "answer": "Un LSP és un camí virtual que segueixen tots els paquets assignats a un mateix FEC",
+        "times_asked": 0
     },
     {
-        "question": "Quin any va arribar l'home a la Lluna?",
-        "options": {
-            "A": "1965",
-            "B": "1969",
-            "C": "1972",
-            "D": "1975"
-        },
-        "answer": "B"
+        "question": "Què és un LSR en MPLS?",
+        "options": [
+            "Un LSR només pot ser un router, ja que ha d’implementar funcions d’encaminament",
+            "Un LSR és un dispositiu MPLS que només implementa la distribució d’etiquetes, però no reenvia paquets",
+            "Un LSR pot ser un switch ATM o un router IP amb noves funcionalitats incorporades",
+            "Un LSR només pot ser un switch, perquè ha de commutar les etiquetes que rep"
+        ],
+        "answer": "Un LSR pot ser un switch ATM o un router IP amb noves funcionalitats incorporades",
+        "times_asked": 0
     },
     {
-        "question": "Quin any va arribar l'home a la Lluna?",
-        "options": {
-            "A": "1965",
-            "B": "1969",
-            "C": "1972",
-            "D": "1975"
-        },
-        "answer": "B"
+        "question": "Quina de les següents afirmacions és certa?",
+        "options": [
+            "Els LSP de MPLS són els VPI/VCI d’ATM",
+            "Els FEC de MPLS són com els VCC d’ATM",
+            "Les Labels de MPLS equivalen als DLCI de FR o a les adreces de 20 bytes d’ATM",
+            "Els LSR de MPLS equivalen als switches en ATM"
+        ],
+        "answer": "Les Labels de MPLS equivalen als DLCI de FR o a les adreces de 20 bytes d’ATM",
+        "times_asked": 1
     },
     {
-        "question": "Quin any va arribar l'home a la Lluna?",
-        "options": {
-            "A": "1965",
-            "B": "1969",
-            "C": "1972",
-            "D": "1975"
-        },
-        "answer": "B"
+        "question": "Quina afirmació és correcta en MPLS?",
+        "options": [
+            "El protocol LDP realitza l’intercanvi d’informació d’etiquetes",
+            "El protocol LSP realitza la commutació d’etiquetes",
+            "El protocol BGP és l’únic protocol de routing en MPLS",
+            "El protocol FEC escull la millor col·locació de cada flux d’informació"
+        ],
+        "answer": "El protocol LDP realitza l’intercanvi d’informació d’etiquetes",
+        "times_asked": 3
     },
     {
-        "question": "Quin any va arribar l'home a la Lluna?",
-        "options": {
-            "A": "1965",
-            "B": "1969",
-            "C": "1972",
-            "D": "1975"
-        },
-        "answer": "B"
+        "question": "Quina afirmació és incorrecta sobre la tecnologia MPLS?",
+        "options": [
+            "MPLS pot funcionar sobre el protocol IP",
+            "MPLS pot funcionar sobre el protocol Frame Relay",
+            "MPLS pot funcionar sobre el protocol ATM",
+            "MPLS pot funcionar sobre el protocol Ethernet"
+        ],
+        "answer": "MPLS pot funcionar sobre el protocol IP",
+        "times_asked": 3
     },
     {
-        "question": "Quin any va arribar l'home a la Lluna?",
-        "options": {
-            "A": "1965",
-            "B": "1969",
-            "C": "1972",
-            "D": "1975"
-        },
-        "answer": "B"
+        "question": "En MPLS, la tècnica Penultimate Hop Popping (PHP) permet…",
+        "options": [
+            "Reduir el tamany de la capçalera MPLS",
+            "Ampliar el tamany de la capçalera MPLS",
+            "Reduir el temps de processament de paquets en els LERs",
+            "Reduir el temps de processament de paquets en els LSRs"
+        ],
+        "answer": "Reduir el temps de processament de paquets en els LERs",
+        "times_asked": 1
     },
     {
-        "question": "Quin any va arribar l'home a la Lluna?",
-        "options": {
-            "A": "1965",
-            "B": "1969",
-            "C": "1972",
-            "D": "1975"
-        },
-        "answer": "B"
+        "question": "Indiqueu el grup d’adreces on totes són adreces IP privades assignables a un host:",
+        "options": [
+            "10.1.1.0/24, 172.16.1.20/24, 192.168.1.0/24",
+            "172.16.2.15/28, 192.168.2.34/24, 10.0.0.5/8",
+            "172.32.1.127/24, 192.170.1.0/16, 169.254.0.0/16",
+            "192.186.1.1/24, 172.20.1.10/24, 192.168.15.5/28"
+        ],
+        "answer": "10.1.1.0/24, 172.16.1.20/24, 192.168.1.0/24",
+        "times_asked": 2
     },
     {
-        "question": "Quin any va arribar l'home a la Lluna?",
-        "options": {
-            "A": "1965",
-            "B": "1969",
-            "C": "1972",
-            "D": "1975"
-        },
-        "answer": "B"
+        "question": "En una xarxa d’oficina on diversos equips es comuniquen amb adreces IP dins del mateix segment local, quan un equip ha d’enviar informació a un altre, què necessita obtenir primer (relacionat amb la IP de destinació) per encapçalar correctament les dades i amb quin protocol?",
+        "options": [
+            "L’adreça IP utilitzant el protocol ICMP.",
+            "L’adreça IP utilitzant el protocol TTL.",
+            "L’adreça MAC utilitzant el protocol ARP.",
+            "L’adreça MAC utilitzant el protocol DHCP."
+        ],
+        "answer": "L’adreça MAC utilitzant el protocol ARP.",
+        "times_asked": 2
     },
     {
-        "question": "Quin any va arribar l'home a la Lluna?",
-        "options": {
-            "A": "1965",
-            "B": "1969",
-            "C": "1972",
-            "D": "1975"
-        },
-        "answer": "B"
+        "question": "Quines de les següents són tecnologies d’accés?",
+        "options": [
+            "ADSL, 802.1q, SAN",
+            "WAN, 3G, FTTJ",
+            "ADSL, FTTH, 5G",
+            "5G, 4G, AES"
+        ],
+        "answer": "ADSL, FTTH, 5G",
+        "times_asked": 2
     },
     {
-        "question": "Quin any va arribar l'home a la Lluna?",
-        "options": {
-            "A": "1965",
-            "B": "1969",
-            "C": "1972",
-            "D": "1975"
-        },
-        "answer": "B"
+        "question": "Quant a les tecnologies de transport de la informació, quina de les afirmacions següents és vertadera?",
+        "options": [
+            "El “message switching” també s’anomena “Store and Forward.”",
+            "El mode datagrama és un mètode de commutació orientat a connexió.",
+            "El “message switching” es diferencia de la “packet switching” bàsicament perquè fragmenta la informació en unitats més petites.",
+            "En les xarxes de difusió (broadcast), la informació emesa per un emissor mai arriba a tots els nodes de la xarxa."
+        ],
+        "answer": "El “message switching” també s’anomena “Store and Forward.”",
+        "times_asked": 1
     },
     {
-        "question": "Quin any va arribar l'home a la Lluna?",
-        "options": {
-            "A": "1965",
-            "B": "1969",
-            "C": "1972",
-            "D": "1975"
-        },
-        "answer": "B"
+        "question": "Quan parlem d’aplicacions de criptografia, quina de les afirmacions següents és correcta?",
+        "options": [
+            "En el certificat digital, s’utilitzen tècniques de resum (hash) i criptografia asimètrica per garantir la disponibilitat als usuaris autoritzats.",
+            "En la “digital envelope”, s’aplica simultàniament criptografia simètrica i asimètrica per aconseguir la integritat.",
+            "La signatura digital utilitza tècniques de hash i criptografia asimètrica per garantir l’autenticitat de l’emissor.",
+            "La signatura digital utilitza tècniques de hash i criptografia simètrica per garantir l’autenticitat de l’emissor."
+        ],
+        "answer": "La signatura digital utilitza tècniques de hash i criptografia asimètrica per garantir l’autenticitat de l’emissor.",
+        "times_asked": 3
     },
     {
-        "question": "Quin any va arribar l'home a la Lluna?",
-        "options": {
-            "A": "1965",
-            "B": "1969",
-            "C": "1972",
-            "D": "1975"
-        },
-        "answer": "B"
+        "question": "Quines de les següents tecnologies VPN estan considerades obsoletes (o en desús)?",
+        "options": [
+            "PPTP VPNs, L2TP VPNs, MPLS VPNs",
+            "IPsec VPNs, SSL/TLS VPNs, PPTP VPNs",
+            "PPTP VPNs, L2TP VPNs, SSL VPNs",
+            "MPLS VPNs, IPsec VPNs, TLS VPNs"
+        ],
+        "answer": "PPTP VPNs, L2TP VPNs, SSL VPNs",
+        "times_asked": 2
     },
     {
-        "question": "Quin any va arribar l'home a la Lluna?",
-        "options": {
-            "A": "1965",
-            "B": "1969",
-            "C": "1972",
-            "D": "1975"
-        },
-        "answer": "B"
+        "question": "Dels dos modes de funcionament d’una IPSec VPN, quina afirmació és vertadera?",
+        "options": [
+            "El mode Transport protegeix tot el paquet complet.",
+            "El mode Tunnel conserva la capçalera IP original inalterada.",
+            "El mode Transport només protegeix (xifra) les dades, però no la capçalera IP.",
+            "El mode Tunnel i el mode Transport xifren el paquet IP original sencer i l’encapsulen en un nou paquet IP."
+        ],
+        "answer": "El mode Transport només protegeix (xifra) les dades, però no la capçalera IP.",
+        "times_asked": 2
     },
     {
-        "question": "Quin any va arribar l'home a la Lluna?",
-        "options": {
-            "A": "1965",
-            "B": "1969",
-            "C": "1972",
-            "D": "1975"
-        },
-        "answer": "B"
+        "question": "Quina de les afirmacions següents és correcta pel que fa a l’encapsulació IPSec?",
+        "options": [
+            "IPSec, igual que SSL/TLS, és compatible amb NAT.",
+            "Amb NAT, tots els nivells de l’arquitectura queden encriptats excepte el nivell físic.",
+            "El “NAT traversal” pot utilitzar UDP i TCP.",
+            "El “NAT traversal” afegeix una capçalera UDP."
+        ],
+        "answer": "El “NAT traversal” afegeix una capçalera UDP.",
+        "times_asked": 2
     },
     {
-        "question": "Quin any va arribar l'home a la Lluna?",
-        "options": {
-            "A": "1965",
-            "B": "1969",
-            "C": "1972",
-            "D": "1975"
-        },
-        "answer": "B"
+        "question": "Per garantir la privacitat (confidencialitat) de les dades, hem de:",
+        "options": [
+            "Xifrar les dades amb la nostra clau pública.",
+            "Xifrar les dades amb la clau pública del receptor.",
+            "Xifrar les dades amb la nostra clau privada.",
+            "Xifrar les dades amb la clau privada del receptor."
+        ],
+        "answer": "Xifrar les dades amb la clau pública del receptor.",
+        "times_asked": 1
     },
     {
-        "question": "Quin any va arribar l'home a la Lluna?",
-        "options": {
-            "A": "1965",
-            "B": "1969",
-            "C": "1972",
-            "D": "1975"
-        },
-        "answer": "B"
+        "question": "Si considerem diferents mecanismes de cua per oferir diversos nivells de servei, quina de les següents afirmacions és falsa?",
+        "options": [
+            "FIFO (First Input First Output) processa els paquets per ordre d’arribada, sense prioritzar cap paquet en concret.",
+            "PQ (Priority Queuing) garanteix que els paquets de més prioritat es processen abans que els de prioritat inferior.",
+            "WRR (Weighted Round Robin) distribueix igual l’ample de banda a totes les cues, independentment de les prioritats.",
+            "FQ (Fair Queuing) assigna el mateix pes a cadascuna de les cues per assegurar una distribució justa."
+        ],
+        "answer": "WRR (Weighted Round Robin) distribueix igual l’ample de banda a totes les cues, independentment de les prioritats.",
+        "times_asked": 2
     },
     {
-        "question": "Quin any va arribar l'home a la Lluna?",
-        "options": {
-            "A": "1965",
-            "B": "1969",
-            "C": "1972",
-            "D": "1975"
-        },
-        "answer": "B"
+        "question": "Quina afirmació és correcta respecte a les arquitectures de QoS?",
+        "options": [
+            "S’implementen tant a nivell 2 com a nivell 3",
+            "Es classifiquen en dues categories: Serveis Integrats (IntServ) i Serveis Diferenciats",
+            "MPLS disposa de la seva pròpia arquitectura de QoS, totalment diferent de les arquitectures IntServ i DiffServ",
+            "MPLS implementa l’arquitectura IntServ"
+        ],
+        "answer": "Es classifiquen en dues categories: Serveis Integrats (IntServ) i Serveis Diferenciats",
+        "times_asked": 0
     },
     {
-        "question": "Quin any va arribar l'home a la Lluna?",
-        "options": {
-            "A": "1965",
-            "B": "1969",
-            "C": "1972",
-            "D": "1975"
-        },
-        "answer": "B"
+        "question": "Pel que fa a l’arquitectura del router PE en una MPLS-VPN, quina afirmació és certa?",
+        "options": [
+            "És una implementació monolítica, amb una única taula de rutes",
+            "Hi ha una VRF per client i una taula de rutes global",
+            "Hi ha una VRF global i una taula de rutes global",
+            "Hi ha una VRF per client amb la seva taula de rutes associada i una taula de rutes global"
+        ],
+        "answer": "Hi ha una VRF per client amb la seva taula de rutes associada i una taula de rutes global",
+        "times_asked": 2
     },
     {
-        "question": "Quin any va arribar l'home a la Lluna?",
-        "options": {
-            "A": "1965",
-            "B": "1969",
-            "C": "1972",
-            "D": "1975"
-        },
-        "answer": "B"
+        "question": "Quina afirmació és incorrecta sobre Metro-Ethernet (ME)?",
+        "options": [
+            "ME proporciona connectivitat Ethernet a nivell MAN o WAN, amb un cost operacional reduït d’Ethernet",
+            "ME es pot implementar sobre diferents tecnologies (MPLS, SONET, WiMAX…)",
+            "La implementació de ME sobre MPLS implica utilitzar tunelitzacions encriptades",
+            "ME equival a implementar VPNs de nivell 2 on el protocol transportat és Ethernet"
+        ],
+        "answer": "La implementació de ME sobre MPLS implica utilitzar tunelitzacions encriptades",
+        "times_asked": 0
     },
     {
-        "question": "Quin any va arribar l'home a la Lluna?",
-        "options": {
-            "A": "1965",
-            "B": "1969",
-            "C": "1972",
-            "D": "1975"
-        },
-        "answer": "B"
+        "question": "Quina opció no és vàlida per implementar el routing entre 3 VLAN diferents en una xarxa Ethernet?",
+        "options": [
+            "Utilitzar un switch que faci de router (L3 switch)",
+            "Utilitzar un router amb 3 interfícies Ethernet",
+            "Utilitzar un switch que ens permeti crear 2 VRFs",
+            "Utilitzar un router amb 2 interfícies Ethernet, les quals agreguem amb LACP i després creem"
+        ],
+        "answer": "Utilitzar un switch que ens permeti crear 2 VRFs",
+        "times_asked": 1
     },
     {
-        "question": "Quin any va arribar l'home a la Lluna?",
-        "options": {
-            "A": "1965",
-            "B": "1969",
-            "C": "1972",
-            "D": "1975"
-        },
-        "answer": "B"
+        "question": "Sobre els cables submarins, com s’alimenten els amplificadors òptics intermedis?",
+        "options": [
+            "Són amplificadors passius, no cal alimentar-los.",
+            "Mecanismes d’inducció, mitjançant camps magnètics.",
+            "A través del conductor de coure que acompanya el cable submarí.",
+            "Els amplificadors s’alimenten mitjançant bateries."
+        ],
+        "answer": "A través del conductor de coure que acompanya el cable submarí.",
+        "times_asked": 2
     },
     {
-        "question": "Quin any va arribar l'home a la Lluna?",
-        "options": {
-            "A": "1965",
-            "B": "1969",
-            "C": "1972",
-            "D": "1975"
-        },
-        "answer": "B"
+        "question": "Quina afirmació és correcta sobre PBR (Policy Based Routing)?",
+        "options": [
+            "Utilitza Policies en el Border Router per millorar l’eficiència.",
+            "Permet que els routers treballin amb protocols de nivell 2.",
+            "Utilitza paràmetres com l’adreça d’origen o el port TCP per redirigir (enrutar) els paquets.",
+            "Empra mecanismes de xifrat durant el reenviament de paquets."
+        ],
+        "answer": "Utilitza paràmetres com l’adreça d’origen o el port TCP per redirigir (enrutar) els paquets.",
+        "times_asked": 1
     },
     {
-        "question": "Quin any va arribar l'home a la Lluna?",
-        "options": {
-            "A": "1965",
-            "B": "1969",
-            "C": "1972",
-            "D": "1975"
-        },
-        "answer": "B"
+        "question": "Pel que fa als algoritmes de criptografia simètrica, quina afirmació és incorrecta?",
+        "options": [
+            "Fan servir la mateixa clau per xifrar i desxifrar.",
+            "Els algoritmes de criptografia simètrica inclouen mecanismes de distribució de claus com IDEA.",
+            "DES utilitza claus de 56 bits, mentre que AES pot fer servir 128, 192 o 256 bits.",
+            "L’avantatge principal és la velocitat, però tenen el problema seriós de la distribució de claus."
+        ],
+        "answer": "Els algoritmes de criptografia simètrica inclouen mecanismes de distribució de claus com IDEA.",
+        "times_asked": 1
     },
     {
-        "question": "Quin any va arribar l'home a la Lluna?",
-        "options": {
-            "A": "1965",
-            "B": "1969",
-            "C": "1972",
-            "D": "1975"
-        },
-        "answer": "B"
+        "question": "Quina afirmació és errònia?",
+        "options": [
+            "RSA és un algoritme de criptografia asimètrica que fa servir principalment claus de 1024, 2048 o 4096 bits.",
+            "Les funcions hash transformen un missatge de longitud arbitrària en un de longitud constant.",
+            "Per implementar la ‘digital envelope’, fem servir criptografia simètrica, asimètrica i funcions hash.",
+            "Per implementar la ‘digital signature’, fem servir criptografia asimètrica i funcions hash."
+        ],
+        "answer": "Per implementar la ‘digital envelope’, fem servir criptografia simètrica, asimètrica i funcions hash.",
+        "times_asked": 2
     },
     {
-        "question": "Quin any va arribar l'home a la Lluna?",
-        "options": {
-            "A": "1965",
-            "B": "1969",
-            "C": "1972",
-            "D": "1975"
-        },
-        "answer": "B"
+        "question": "Per garantir la privacitat (confidencialitat) hem de:",
+        "options": [
+            "Xifrar les dades amb la nostra clau pública.",
+            "Xifrar les dades amb la clau pública del receptor.",
+            "Xifrar les dades amb la nostra clau privada.",
+            "Xifrar les dades amb la clau privada del receptor."
+        ],
+        "answer": "Xifrar les dades amb la clau pública del receptor.",
+        "times_asked": 1
+    },
+    {
+        "question": "Per garantir la integritat del missatge (signatura), hem de:",
+        "options": [
+            "Xifrar el missatge amb la nostra clau privada.",
+            "Xifrar el resum (hash) del missatge amb la nostra clau privada.",
+            "Xifrar el missatge amb la clau pública del receptor.",
+            "Xifrar el resum (hash) del missatge amb la clau pública del receptor."
+        ],
+        "answer": "Xifrar el resum (hash) del missatge amb la nostra clau privada.",
+        "times_asked": 2
+    },
+    {
+        "question": "Blowfish és…",
+        "options": [
+            "Un algoritme de criptografia simètrica",
+            "Un algoritme de criptografia asimètrica",
+            "Un algoritme de resum (hash)",
+            "Un algoritme de criptografia quàntica"
+        ],
+        "answer": "Un algoritme de criptografia simètrica",
+        "times_asked": 1
+    },
+    {
+        "question": "Quantes claus empra SHA256?",
+        "options": [
+            "1",
+            "2",
+            "3",
+            "256"
+        ],
+        "answer": "1",
+        "times_asked": 2
+    },
+    {
+        "question": "Quina és la primera i darrera adreça de host útil de la subxarxa a la que pertany el host 44.55.66.77/22?",
+        "options": [
+            "44.55.65.1 i 44.55.66.254",
+            "44.55.66.1 i 44.55.67.254",
+            "44.55.64.1 i 44.55.67.254",
+            "44.55.64.1 i 44.55.66.254"
+        ],
+        "answer": "44.55.64.1 i 44.55.67.254",
+        "times_asked": 1
+    },
+    {
+        "question": "Quan parlem de xarxes commutades podem afirmar que:",
+        "options": [
+            "Les xarxes commutades en mode datagrama són més flexibles però menys fiables que les de circuits virtuals.",
+            "Les xarxes de circuits virtuals tenen més latència en l’establiment de la connexió.",
+            "En les xarxes de commutació de paquets orientades a connexió els paquets arriben desordenats i no tots segueixen el mateix camí.",
+            "En la commutació de paquets amb “circuits virtuals” la informació del mateix circuit virtual és multiplexada per diferents camins."
+        ],
+        "answer": "Les xarxes de circuits virtuals tenen més latència en l’establiment de la connexió.",
+        "times_asked": 0
+    },
+    {
+        "question": "Quina afirmació és correcta si volem interconnectar dos switches Ethernet i assegurar la disponibilitat de la xarxa en cas de fallada d’un dels enllaços entre ambdós switches:",
+        "options": [
+            "Connectar-los amb dos enllaços a 1.000 Gbps.",
+            "Connectar-los amb dos enllaços agregats mitjançant el protocol LACP.",
+            "Connectar-los amb dos enllaços i configurar Spanning-tree en l’enllaç principal.",
+            "Connectar-los amb dos enllaços i configurar 802.1q en ambdós enllaços."
+        ],
+        "answer": "Connectar-los amb dos enllaços agregats mitjançant el protocol LACP.",
+        "times_asked": 2
+    },
+    {
+        "question": "Quina opció no és vàlida per implementar el routing entre 3 VLANs diferents en una xarxa Ethernet:",
+        "options": [
+            "Utilitzar un router amb 3 interfícies ethernet.",
+            "Utilitzar un switch Layer 3 amb 2 VRFs.",
+            "Utilitzar un router amb 2 interfícies ethernet, les quals es agreguen mitjançant LACP i creen sub-interfaces.",
+            "Utilitzar un switch Layer 2 i 3 interfícies."
+        ],
+        "answer": "Utilitzar un router amb 2 interfícies ethernet, les quals es agreguen mitjançant LACP i creen sub-interfaces.",
+        "times_asked": 2
+    },
+    {
+        "question": "La nostra xarxa està connectada a Internet mitjançant un equip RFI, el qual fa tant les funcions de Router com de Firewall, a través de dues connexions WAN diferents (wan1 i wan2), cadascuna cap a un ISP diferent. Per tal d’encaminar per la interfície wan2 tot el tràfic que vingui de la nostra xarxa interna 10.1.1.0/24 i que vagi cap a Internet caldrà:",
+        "options": [
+            "Configurar convenientment la taula de Routing de RFI",
+            "Configurar LACP entre ambdues connexions WAN",
+            "Configurar NAT en la interfície wan2",
+            "Configurar ‘policy-routing’ en RFI"
+        ],
+        "answer": "Configurar ‘policy-routing’ en RFI",
+        "times_asked": 1
+    },
+    {
+        "question": "Quines de les següents són tecnologies d’accés?",
+        "options": [
+            "WiMAX, FBBH, LAN",
+            "LAN, 3G, FTTH",
+            "ADSL, 2G, FTTH",
+            "AES, 5G, 4G"
+        ],
+        "answer": "ADSL, 2G, FTTH",
+        "times_asked": 0
+    },
+    {
+        "question": "Quina afirmació és incorrecta sobre MetroEthernet (ME)?",
+        "options": [
+            "ME proporciona connexions entre Ethernet a través MAN o WAN, amb el cos operacionals d’Ethernet.",
+            "ME es pot implementar sobre diferents tecnologies, entre les que podem destacar MPLS, SONET i WiMAX.",
+            "La implementació de ME sobre MPLS implica utilitzar mecanismes de seguretat.",
+            "ME equival a implementar VPNs de nivell 2 en el protocol transparent d’Ethernet."
+        ],
+        "answer": "La implementació de ME sobre MPLS implica utilitzar mecanismes de seguretat.",
+        "times_asked": 2
+    },
+    {
+        "question": "Quina afirmació és incorrecta respecte els dispositius d’una arquitectura MPLS VPN?",
+        "options": [
+            "Els routers PE transporten totes les rutes VPN dels diferents clients.",
+            "Els routers CE disposen del seu protocol de routing propi.",
+            "Els routers CE s’identifiquen únicament l’arquitectura MPLS VPN.",
+            "Els Routers P es situen a la frontera entre el core MPLS i la xarxa del client."
+        ],
+        "answer": "Els routers CE s’identifiquen únicament l’arquitectura MPLS VPN.",
+        "times_asked": 2
+    },
+    {
+        "question": "Respecte els algorismes de criptografia simètrica, quina afirmació és incorrecta?",
+        "options": [
+            "Alguns exemples són DES, 3DES, IDEA, RC4 i AES.",
+            "Utilitzen la mateixa clau per encriptar que per desencriptar.",
+            "3DES utilitza claus de 56 bits × 3 bits de paritat mentre que AES utilitza claus de 128, 192 o 256 bits.",
+            "El principal avantatge d’aquests tipus de criptografia és la seva velocitat d’encriptació, però pateixen un greu problema que és la gestió (distribució) de les claus."
+        ],
+        "answer": "3DES utilitza claus de 56 bits × 3 bits de paritat mentre que AES utilitza claus de 128, 192 o 256 bits.",
+        "times_asked": 0
+    },
+    {
+        "question": "Quina afirmació és incorrecta sobre VPLS?",
+        "options": [
+            "L’arquitectura bàsica consisteix en una distribució Hub and Spoke, que és pel que també es coneix com E-TREE.",
+            "L’arquitectura bàsica consisteix en una malla complerta de Pseudowires entre PEs per a cada instància de VPLS.",
+            "Cada PE actua com un “transparent learning Ethernet bridge”.",
+            "La tècnica del “Split Horizon” s’aplica per evitar bucles."
+        ],
+        "answer": "L’arquitectura bàsica consisteix en una distribució Hub and Spoke, que és pel que també es coneix com E-TREE.",
+        "times_asked": 2
+    },
+    {
+        "question": "Quina afirmació és incorrecta pel que fa a VXLAN?",
+        "options": [
+            "Permet connectar diferents màquines a la mateixa VLAN quan hi ha una xarxa de nivell 3 entre mig.",
+            "Implementa túnels VTEP entre els dispositius d’usuari.",
+            "Encapsula les trames VXLAN en UDP + IP per poder enviar el tràfic.",
+            "Utilitza identificadors de 24 bits com VNI (VXLAN Network Identifier)."
+        ],
+        "answer": "Implementa túnels VTEP entre els dispositius d’usuari.",
+        "times_asked": 3
+    },
+    {
+        "question": "Quina funcionalitat realitza el Router Distinguisher (RD) de les VPN-MPLS?",
+        "options": [
+            "Complementa els routers quan la càrrega computacional és elevada.",
+            "Defineix rutes de backup distingint entre diferents prioritats.",
+            "Resol el problema del sobreposament de prefixos entre diferents clients.",
+            "Combina tècniques de QoS per millorar el servei."
+        ],
+        "answer": "Resol el problema del sobreposament de prefixos entre diferents clients.",
+        "times_asked": 0
+    },
+    {
+        "question": "Pel que fa a Serveis MPLS, quina afirmació és correcta?",
+        "options": [
+            "La tecnologia Carrier Ethernet té el mateix comportament que un switch i un Pseudowire que un router.",
+            "La tecnologia VPLS té el mateix comportament que un switch i Metro Ethernet que un router.",
+            "La tecnologia Metro Ethernet té el mateix comportament que un switch i VPLS que un router.",
+            "La tecnologia VPLS té el mateix comportament que un switch i MPLS VPN que un router."
+        ],
+        "answer": "La tecnologia VPLS té el mateix comportament que un switch i Metro Ethernet que un router.",
+        "times_asked": 0
+    },
+    {
+        "question": "En MPLS-VPN en el cas d’implementar PHP (Penultimate Hop Popping), qui implementa aquesta tècnica?",
+        "options": [
+            "Únicament el LER de sortida de la xarxa.",
+            "Únicament el LSR previ al LER de sortida de la xarxa.",
+            "S’implementen 2 processos de PHP, doncs s’utilitzen dues capçaleres MPLS.",
+            "No s’implementa."
+        ],
+        "answer": "Únicament el LSR previ al LER de sortida de la xarxa.",
+        "times_asked": 2
+    },
+    {
+        "question": "Quina afirmació és incorrecta respecte els condicionadors de tràfic?",
+        "options": [
+            "El classificador indica la classe de servei al qual pertanyen els diferents paquets de dades.",
+            "La funció policy elimina tots els paquets que superen el perfil preestablert.",
+            "El measurador pot utilitzar dues maneres per marcar els paquets, el format ToS o el DS.",
+            "A nivell del pla d’usuari els condicionadors de tràfic a l’entrada de la xarxa són: Classifier, Policy/Shaper."
+        ],
+        "answer": "La funció policy elimina tots els paquets que superen el perfil preestablert.",
+        "times_asked": 2
+    },
+    {
+        "question": "Quina afirmació és correcta?",
+        "options": [
+            "La tecnologia VXLAN estèn el màxim nombre de VLANs a 16.000.",
+            "Elliptic Curve és un algorisme de criptografia simètrica.",
+            "El protocol SSL es implementat per estendre les funcionalitats de SSH.",
+            "SD-WAN permet accelerar el procés de desplegament d’una xarxa de comunicacions."
+        ],
+        "answer": "SD-WAN permet accelerar el procés de desplegament d’una xarxa de comunicacions.",
+        "times_asked": 1
+    },
+    {
+        "question": "Quina afirmació és incorrecta sobre les VRF (Virtual Routing and Forwarding)?",
+        "options": [
+            "Permet implementar diferents instàncies de routing al mateix equip.",
+            "Com el tràfic es automàticament segregat, incrementa el nivell de seguretat d’encriptació i autenticació.",
+            "Cada VRF és un router independent amb protocols de routing i taules de routing.",
+            "VRF és una tecnologia que no està inclosa en IP (Internet Protocol)."
+        ],
+        "answer": "Com el tràfic es automàticament segregat, incrementa el nivell de seguretat d’encriptació i autenticació.",
+        "times_asked": 0
+    },
+    {
+        "question": "Què és un LSR en MPLS?",
+        "options": [
+            "Un LSR només pot ser un router, ja que ha d’implementar funcions de Routing.",
+            "Un LSR és un dispositiu MPLS que només implementa distribució d’etiquetes.",
+            "Un LSR és tant un switch com un router ja que implementa ambdues funcions.",
+            "Un LSR només pot ser un switch, perquè ha de commutar les etiquetes dels paquets."
+        ],
+        "answer": "Un LSR és tant un switch com un router ja que implementa ambdues funcions.",
+        "times_asked": 0
+    },
+    {
+        "question": "Quina afirmació és incorrecta sobre VXLAN?",
+        "options": [
+            "VXLAN permet interconnectar dispositius que han d’estar a la mateixa xarxa però en diferents xarxes de nivell 3.",
+            "VXLAN permet eliminar la limitació de les VLANs en quan a número de VLANs.",
+            "VXLAN permet eliminar la necessitat d’utilitzar Spanning Tree Protocol.",
+            "VXLAN és un protocol de superposició de xarxes utilitzat per transmetre tràfic de dades."
+        ],
+        "answer": "VXLAN permet eliminar la necessitat d’utilitzar Spanning Tree Protocol.",
+        "times_asked": 3
+    },
+    {
+        "question": "Per assegurar la privacitat d’un missatge i que només ho pugui llegir el seu destinatari, com s’ha de xifrar?",
+        "options": [
+            "Xifrar les dues claus amb la clau pública.",
+            "Xifrar les dades amb la clau pública del receptor.",
+            "Xifrar les dades amb la clau privada del receptor.",
+            "Xifrar les dades amb la clau privada del receptor i amb la clau pública."
+        ],
+        "answer": "Xifrar les dades amb la clau pública del receptor.",
+        "times_asked": 2
+    },
+    {
+        "question": "Quina de les següents afirmacions és certa:",
+        "options": [
+            "IPSEC afegeix un conjunt de capçaleres entre les capçaleres de Nivell 2 i la de Nivell 1. Afegeix la capçalera AH (Authentication Header) i/o ESP (Encapsulation Security Payload).",
+            "IPSEC afegeix un conjunt de capçaleres entre les capçaleres de Nivell 2 i la de Nivell 1. Afegeix la capçalera AH (Authentication Header) i/o NAT-T (Nat Traversal).",
+            "En el mode Túnel de IPSEC, tot el paquet IP original és encriptat, i s’encapsula dins d’un nou paquet IP.",
+            "IPSEC afegeix un conjunt de capçaleres entre la capçalera IP i la de Nivell 4. Afegeix la capçalera AH (Authentication Header) i/o NAT-T (Nat Traversal)."
+        ],
+        "answer": "IPSEC afegeix un conjunt de capçaleres entre les capçaleres de Nivell 2 i la de Nivell 1. Afegeix la capçalera AH (Authentication Header) i/o ESP (Encapsulation Security Payload).",
+        "times_asked": 1
+    },
+    {
+        "question": "La capacitat d’una xarxa per proporcionar el servei requerit per les aplicacions de xarxa, en quins nivells de Quality of Service (QoS) es classifica:",
+        "options": [
+            "En 3 nivells: Servei Best Effort, Differentiated Service, Guaranteed Service.",
+            "El Quality of Service (QoS) es pot normalment classificar en cap nivell.",
+            "En 2 nivells: Servei Best Effort, Guaranteed Service.",
+            "En 4 nivells: Servei Best Effort, Differentiated Service, Guaranteed Service, Call Admission Control."
+        ],
+        "answer": "En 3 nivells: Servei Best Effort, Differentiated Service, Guaranteed Service.",
+        "times_asked": 2
+    },
+    {
+        "question": "Respecte als algorismes de criptografia, quina afirmació és incorrecta?",
+        "options": [
+            "DES és un sistema criptogràfic de xifrat de bloc que pren com entrada un bloc de 64 bits.",
+            "El funcionament del 3DES consisteix en aplicar 3 vegades el sistema DES usant dues claus de 56 bits.",
+            "Les funcions de hash més conegudes són: MD5, SHA-1, RIPEMD.",
+            "La funció hash transforma un missatge de longitud arbitrària de forma \"única\" a un missatge de longitud variable."
+        ],
+        "answer": "La funció hash transforma un missatge de longitud arbitrària de forma \"única\" a un missatge de longitud variable.",
+        "times_asked": 0
+    },
+    {
+        "question": "Quina de les següents afirmacions és certa respecte l’arquitectura de xarxa de MPLS?",
+        "options": [
+            "Els routers CE (Client Edge) connecten la xarxa dels clients amb la xarxa MPLS mitjançant un enllaç directe amb el Edge-Label Switch Router (Edge-LSR) més proper.",
+            "Els Forwarding Equivalence Class (FEC) es canvien automàticament segons les infraestructures de nodes MPLS.",
+            "Els Label Switched Path (LSP) implementen mecanismes de distribució d’etiquetes i poden realitzar reenviament de paquets.",
+            "El Label Switch Router correspon a un element normalment situat al límit del domini MPLS."
+        ],
+        "answer": "Els routers CE (Client Edge) connecten la xarxa dels clients amb la xarxa MPLS mitjançant un enllaç directe amb el Edge-Label Switch Router (Edge-LSR) més proper.",
+        "times_asked": 3
+    },
+    {
+        "question": "Quina afirmació és certa respecte la capçalera MPLS?",
+        "options": [
+            "Conté un camp de 3 bits (EXP) que és fa servir per identificar la classe de servei.",
+            "El format concret (i ordre dels camps) és el següent: Etiqueta (20 bits), EXP (3 bits), TTL (8 bits), S (1 bit).",
+            "El camp EXP identifica exclusivament la ruta que ha de seguir el paquet.",
+            "El camp de l’etiqueta és de 16 bits."
+        ],
+        "answer": "Conté un camp de 3 bits (EXP) que és fa servir per identificar la classe de servei.",
+        "times_asked": 2
+    },
+    {
+        "question": "Which of the following is a valid host “public” “unicast” “C-class” address?",
+        "options": [
+            "224.1.1.123                 255.255.255.0",
+            "199.20.2.208                255.255.255.240",
+            "222.14.1.0                   255.255.240.0",
+            "172.30.1.1                   255.255.255.128"
+        ],
+        "answer": "199.20.2.208                255.255.255.240",
+        "times_asked": 0
+    },
+    {
+        "question": "Host A with IP address 221.25.4.1/14, wants to send an ICMP message to host B  with IP address 221.29.4.2. Which is the correct statement?",
+        "options": [
+            "Host B will receive an Ethernet frame where source MAC address is not Host A’s",
+            "Host A will encapsulate ICMP message within an UDP segment",
+            "Host A will use ARP protocol to request MAC address of host B",
+            "Host A will send the IP packet to host B using broadcast"
+        ],
+        "answer": "Host B will receive an Ethernet frame where source MAC address is not Host A’s",
+        "times_asked": 0
+    },
+    {
+        "question": "Which is the correct statement regarding information transport technologies?",
+        "options": [
+            "Different techniques classification is: packet switching, datagrams and switched  circuits",
+            "A virtual circuit is equivalent to a dedicated line with constant speed between  source and destination",
+            "With connection-oriented packet switching no packets are lost",
+            "Connection oriented packet switching allows the use of smaller headers compared  to datagrams"
+        ],
+        "answer": "Connection oriented packet switching allows the use of smaller headers compared",
+        "times_asked": 0
+    },
+    {
+        "question": "Which is the correct statement regarding 2017 submarine cable map?",
+        "options": [
+            "Submarine cable between Alaska and Russia was installed in 2017",
+            "The most expensive component of the submarine cable is the metal used in the  shielding",
+            "London is one of the locations in Europe aggregating more submarine cables",
+            "Bandwidth price in a submarine cable tends to increase always"
+        ],
+        "answer": "London is one of the locations in Europe aggregating more submarine cables",
+        "times_asked": 0
+    },
+    {
+        "question": "Which statement is correct regarding inter-VLAN Routing?",
+        "options": [
+            "Using a switch-router VLANs definition is no longer needed",
+            "VRFs is a technology that allows multiple instances of a routing table to co-exist  within the same router at the same time",
+            "Policy-based Routing is a technique only possibly used in the Internet connection  Router",
+            "“Hub-and-spoke” implementation is the less scalable"
+        ],
+        "answer": "VRFs is a technology that allows multiple instances of a routing table to co-exist",
+        "times_asked": 0
+    },
+    {
+        "question": "Which statement is incorrect regarding IP Routing process?",
+        "options": [
+            "In order to route an IP packet, routers can only use IP destination address",
+            "Policy-based Routing offers more flexibility in the Routing process",
+            "Currently routers are able to route IP packets using the transported application",
+            "Policy-based Routing allows Routing IP packets using múltiple parameters"
+        ],
+        "answer": "In order to route an IP packet, routers can only use IP destination address",
+        "times_asked": 0
+    },
+    {
+        "question": "Which of the following definitions is incorrect?",
+        "options": [
+            "SAN: Storage Area Network. A special high-speed network that stores and provides  access to large amount of dat",
+            "Consist of switch-arrays, servers and routers",
+            "CAN: Campus Area Network. A network that joins 2 or more LANs together within a  limited are",
+            "Example: University Campus",
+            "MAN: Metropolitan Area Network. Spans over several buildings in a city or town.",
+            "PAN: Personal Area Network. Network that is used in a Personal level. Example:  NFC)"
+        ],
+        "answer": "SAN: Storage Area Network. A special high-speed network that stores and provides",
+        "times_asked": 0
+    },
+    {
+        "question": "OSI layer 3 functions are:",
+        "options": [
+            "Providing services to establish, maintain and terminate connections between layer 4  entities",
+            "Providing routing and addressing services",
+            "All answers are correct",
+            "Media Access control"
+        ],
+        "answer": "Providing routing and addressing services",
+        "times_asked": 0
+    },
+    {
+        "question": "Which quantity of data (in bytes) could be found in a given moment inside a 2.800  Km submarine Optical fiber, with a transmission rate of 600 Gbps (assuming  propagation speed of 0,7c)?",
+        "options": [
+            "?",
+            "50 GBytes",
+            "1 GByte",
+            "800 MBytes",
+            "1,5 TBytes"
+        ],
+        "answer": "1 GByte",
+        "times_asked": 0
+    },
+    {
+        "question": "Which statement is correct regarding the following frame captured using  Wireshark?",
+        "options": [
+            "It’s an Ethernet frame captured in an Access port",
+            "It’s a TCP segment, transmitted over IP, captured in a Trunk port inside VLAN 32",
+            "Application layer protocol is TCP",
+            "It’s a HTTP message targeting server 131.151.32.21"
+        ],
+        "answer": "It’s a TCP segment, transmitted over IP, captured in a Trunk port inside VLAN 32",
+        "times_asked": 0
+    },
+    {
+        "question": "Un router rep un paquet amb adreça destí 172.16.14.228 i màscara de subxarxa  255.255.248.0. ¿Quina és l’adreça de subxarxa destí?",
+        "options": [
+            "172.16.1.0",
+            "172.16.4.0",
+            "172.16.8.0",
+            "172.16.12.0"
+        ],
+        "answer": "172.16.8.0",
+        "times_asked": 0
+    },
+    {
+        "question": "Un router té un port amb l’adreça 107.85.20.2 y màscara de subxarxa  255.255.255.240. ¿Quina és l’adreça broadcast utilitzada per als hosts d’aquesta  subxarxa?",
+        "options": [
+            "107.85.20.15",
+            "107.85.20.255",
+            "107.85.255.255",
+            "107.255.255.255"
+        ],
+        "answer": "107.85.20.15",
+        "times_asked": 0
+    },
+    {
+        "question": "A un dels nostres routers li hem assignat l’adreça 172.19.114.153/21. ¿Quina és  l’adreça de subxarxa i quin és el marge vàlid de direccions de host?",
+        "options": [
+            "Subxarxa: 172.19.114.0; Hosts: 172.19.114.1 fins 172.19.114.254",
+            "Subxarxa: 172.19.112.0; Hosts: 172.19.112.1 fins 172.19.119.254",
+            "Subxarxa: 172.19.110.0; Hosts: 172.19.110.1 fins 172.19.110.254",
+            "Subxarxa: 172.19.0.0; Hosts: 172.19.0.1 fins 172.19.1.254"
+        ],
+        "answer": "Subxarxa: 172.19.112.0; Hosts: 172.19.112.1 fins 172.19.119.254",
+        "times_asked": 0
+    },
+    {
+        "question": "El nostre ISP (Internet Service Provider) ens ha donat per a la nostra xarxa una  direcció IP de classe C. Nosaltres hem triat fer subnetting i, com a resultat, a una de  les nostres màquines li hem assignat l’adreça 216.12.25.12 amb netmask  255.255.255.248. Segons això, quina és la darrera direcció de subxarxa (la de valor  més gran) que podem utilitzar en les nostres subxarxes?",
+        "options": [
+            "216.12.25.240",
+            "216.12.25.241",
+            "216.12.25.248",
+            "216.12.25.255"
+        ],
+        "answer": "216.12.25.248",
+        "times_asked": 0
+    },
+    {
+        "question": "Donada la següent informació:     IP Origen:   Subnet mask:    IP Destí:  15.198.48.10  255.255.240.0   15.198.50.30  podem assegurar que:",
+        "options": [
+            "el datagrama IP haurà de passar por un router obligatòriament",
+            "el host origen i destí són a la mateixa xarxa",
+            "falta informació per a saber si el host origen i destí estan en la mateixa xarxa",
+            "el router de sortida de la xarxa està aplicant NAT"
+        ],
+        "answer": "el host origen i destí són a la mateixa xarxa",
+        "times_asked": 0
+    },
+    {
+        "question": "Quina de les adreces següents és una adreça de host vàlida?",
+        "options": [
+            "12.16.128.0   255.255.192.0",
+            "150.42.15.0    255.255.254.0",
+            "20.40.60.79   255.255.255.240",
+            "130.206.42.0  255.255.255.0"
+        ],
+        "answer": "150.42.15.0",
+        "times_asked": 0
+    },
+    {
+        "question": "Si l’estació A, amb adreça 10.112.15.1/13 vol comunicar-se amb l’estació B, amb  adreça 10.119.15.2/13:",
+        "options": [
+            "L’estació A utilitzarà el protocol ARP per demanar l’adreça MAC de l’estació B",
+            "L’estació A utilitzarà el protocol ICMP per demanar l’adreça MAC de l’estació B",
+            "L’estació A utilitzarà el protocol ARP per demanar l’adreça MAC del router de sortida",
+            "L’estació A utilitzarà el protocol ICMP per demanar l’adreça MAC del router de  sortida"
+        ],
+        "answer": "L’estació A utilitzarà el protocol ARP per demanar l’adreça MAC de l’estació B",
+        "times_asked": 0
+    },
+    {
+        "question": "¿Quina de las següents adreces representa una superxarxa?",
+        "options": [
+            "193.12.64.0/20",
+            "171.3.13.0/16",
+            "190.14.2.0/24",
+            "125.2.2.3/8"
+        ],
+        "answer": "193.12.64.0/20",
+        "times_asked": 0
+    },
+    {
+        "question": "¿Quina de las següents adreces no comparteix el mateix identificador de  subxarxa?",
+        "options": [
+            "Direcció IP: 152.150.255.210, Màscara: 255.255.192.0",
+            "Direcció IP: 152.150.193.100, Màscara: 255.255.192.0",
+            "Direcció IP: 152.150.225.1, Màscara: 255.255.192.0",
+            "Direcció IP: 152.150.156.1, Màscara: 255.255.192.0"
+        ],
+        "answer": "Direcció IP: 152.150.156.1, Màscara: 255.255.192.0",
+        "times_asked": 0
+    },
+    {
+        "question": "Quina és la darrera adreça de host útil de la subxarxa 145.82.88.0/22?",
+        "options": [
+            "145.82.88.254",
+            "145.82.91.254",
+            "145.82.255.254",
+            "145.82.88.255"
+        ],
+        "answer": "145.82.91.254",
+        "times_asked": 0
+    },
+    {
+        "question": "El Host A fa un ping al Host B. Quina afirmació és correcta respecte aquesta xarxa  i la taula d’encaminament de R1?",
+        "options": [
+            "El Host A enviarà el paquet ICMP cap a R2",
+            "El Host A enviarà el paquet ICMP cap a R1, i R1 enviarà el paquet ICMP cap a  Internet",
+            "El Host A enviarà el paquet ICMP cap a R1, i R1 enviarà el paquet ICMP cap a R2",
+            "El Host A enviarà el paquet ICMP cap a R1, i R1 l’eliminarà, perquè no té cap entrada  a la taula d’encaminament cap al Host B  TEMA 3 – QoS"
+        ],
+        "answer": "El Host A enviarà el paquet ICMP cap a R1, i R1 enviarà el paquet ICMP cap a R2",
+        "times_asked": 0
+    },
+    {
+        "question": "Which of the following statements is correct:",
+        "options": [
+            "The QoS allows to integrate different applications with different guarantees on a  single IP network",
+            "The current Internet has been implemented in full by applying QoS mechanisms",
+            "The QoS mechanisms are indispensable in the circuits switching networks",
+            "The QoS mechanisms are implemented only at the IP level"
+        ],
+        "answer": "The QoS allows to integrate different applications with different guarantees on a",
+        "times_asked": 0
+    },
+    {
+        "question": "Which of the following statements is incorrect?",
+        "options": [
+            "End to end delay is composed by propagation, switching, queuing and serialization  delays",
+            "The serialization delay is negligible from speeds exceeding 1 Gbps",
+            "Jitter is caused by the different queuing times that the packets suffer in the nodes  that are part of a circuit-switched network",
+            "Packet loss is a characteristic phenomenon of packet-switched networks"
+        ],
+        "answer": "Jitter is caused by the different queuing times that the packets suffer in the nodes",
+        "times_asked": 0
+    },
+    {
+        "question": "About the functional blocks that are part of a QoS architecture:",
+        "options": [
+            "The nodes located at the limit of the network perform the functions of classification,  measurement, marking, policing and/or shaping",
+            "The internal nodes of the network carry out the functions of policing/shaping,  control of congestion and scheduling",
+            "Traffic conditioners are implemented both in the internal and in the boundary nodes",
+            "CAC and the resources reservation are implemented in the user plane"
+        ],
+        "answer": "The nodes located at the limit of the network perform the functions of classification,",
+        "times_asked": 0
+    },
+    {
+        "question": "About the traffic conditioners:",
+        "options": [
+            "Packets can be classified by the source and/or destination IP addresses, TCP/UDP  ports, and/or many other parameters.",
+            "Traffic conditioners are only applied in routers, not in switches.",
+            "To limit the speed of the peak we only use traffic shaping",
+            "The only metrics used to measure the input traffic are the average speed and the  burst-size"
+        ],
+        "answer": "Packets can be classified by the source and/or destination IP addresses, TCP/UDP",
+        "times_asked": 0
+    },
+    {
+        "question": "What statement is correct?",
+        "options": [
+            "The most commonly used congestion control mechanisms are CBWFQ, RED and  WRED",
+            "Traffic conditioners mechanisms allow to modify and adapt the traffic of the user to  the best conditions with which the network can transmit it",
+            "The WRED mechanism allows different packet loss probabilities to be applied to  different queue",
+            "The best queuing mechanisms to guarantee QoS to different data traffic is Priority  Queue"
+        ],
+        "answer": "Traffic conditioners mechanisms allow to modify and adapt the traffic of the user to",
+        "times_asked": 0
+    },
+    {
+        "question": "What statement is incorrect about the IntServ QoS architecture:",
+        "options": [
+            "Uses the DSCP field to differentiate the different service classes",
+            "Uses the WRED and WFQ mechanisms in the internal nodes of the network",
+            "Uses RSVP signaling protocol to implement the CAC and reserve resources",
+            "It offers three types of services: best-effort, controlled load and guaranteed bit rate"
+        ],
+        "answer": "Uses the DSCP field to differentiate the different service classes",
+        "times_asked": 0
+    },
+    {
+        "question": "What is wrong about DiffServ QoS architecture?",
+        "options": [
+            "Allows you to use RSVP or COPS to implement the resources reservation on the  network",
+            "Uses the DSCP to offer different packet loss probabilities",
+            "Uses the DSCP field to differentiate the different service classes",
+            "It offers with the ToS field three types of services: best-effort, assured forwarding  and expedited forwarding"
+        ],
+        "answer": "The IP Precedence field is in the IPv4 header and the DSCP in the IPv6",
+        "times_asked": 0
+    },
+    {
+        "question": "What is incorrect about the \"IP Precedence\" and \"DSCP\" fields:",
+        "options": [
+            "The DSCP defines four different AF service classes with 3 different packets loss  probabilities for each class",
+            "The IP Precedence defines 8 different priorities for data traffic",
+            "The IP Precedence field is in the IPv4 header and the DSCP in the IPv6",
+            "The DiffServ architecture accepts both the IP Precedence and the DSCP format"
+        ],
+        "answer": "Propagation delay in an optical-fiber cable is about 5 ms each 1000 miles",
+        "times_asked": 0
+    },
+    {
+        "question": "Which statement is false?",
+        "options": [
+            "Interactive traffic requires a RTT lower than 250 ms",
+            "Transmission delay at 10 Gbps can be lower than 1 micro-second",
+            "VoIP requires an end-to-end delay lower than 150 ms",
+            "Propagation delay in an optical-fiber cable is about 5 ms each 1000 miles"
+        ],
+        "answer": "The 802.1q header is composed by: tag protocol (2 bytes), user priority (3 bits),",
+        "times_asked": 0
+    },
+    {
+        "question": "Which statement is false?",
+        "options": [
+            "The 802.1q header is composed by: tag protocol (2 bytes), user priority (3 bits),  canonical format indicator (1 bit) and VLAN ID (10 bits)",
+            "The IP packet has the ToS field in the IP Header.",
+            "The ToS format is composed by: IP Precedence (3 bits), Type of Service (4 bits) and  one not used bit",
+            "The DSCP format uses 6 bits"
+        ],
+        "answer": "La QoS permet integrar amb garanties diferents aplicacions sobre una única xarxa IP.",
+        "times_asked": 0
+    },
+    {
+        "question": "Quina de les següents afirmacions és correcta:",
+        "options": [
+            "Els mecanismes de QoS són imprescindibles en les xarxes de commutació de circuits.",
+            "Els mecanismes de QoS s’implementen únicament a nivell IP.",
+            "La QoS permet integrar amb garanties diferents aplicacions sobre una única xarxa IP.",
+            "La Internet actual s’ha implementat en la seva totalitat aplicant mecanismes de QoS."
+        ],
+        "answer": "La pèrdua de paquets és un fenomen característic de les xarxes de commutació de",
+        "times_asked": 0
+    },
+    {
+        "question": "Quina de les següents afirmacions és incorrecta?",
+        "options": [
+            "El retard extrem a extrem està format pels retards de propagació, commutació,  encuament i serialització.",
+            "La variació del retard o Jitter està provocada pel diferent temps d’encuament que  pateixen els paquets en els nodes que formen part d’una xarxa de commutació de  paquets.",
+            "El retard de serialització és despreciable a partir de velocitats superiors a un STM-1.",
+            "La pèrdua de paquets és un fenomen característic de les xarxes de commutació de  circuits."
+        ],
+        "answer": "El nodes situats al límit de la xarxa realitzen les funcions de classificació, mesura,",
+        "times_asked": 0
+    },
+    {
+        "question": "Sobre els blocs funcionals que formen part d’una arquitectura de QoS:",
+        "options": [
+            "El nodes situats al límit de la xarxa realitzen les funcions de classificació, mesura,  marcatge, policing i/o shaping.",
+            "A nivell del Pla d’usuari s’implementa el CAC i la reserva de recursos.",
+            "Els condicionadors de tràfic s’implementen tant en els nodes interns com en els  nodes del límit de la xarx",
+            "",
+            "Els nodes interns de la xarxa realitzen les funcions de policing/shaping, control de  congestió i scheduling."
+        ],
+        "answer": "El mecanisme que double token bucket permet aplicar polítiques de shaping",
+        "times_asked": 0
+    },
+    {
+        "question": "Sobre els condicionadors de tràfic:",
+        "options": [
+            "Els paquets es classifiquen sempre per les adreces IP origen i destí.",
+            "Les mètriques per mesurar el tràfic d’entrada són la velocitat mitja i el tamany de  ràfeg",
+            "",
+            "El mecanisme que double token bucket permet aplicar polítiques de shaping  basades en la velocitat de pic, velocitat mitja i tamany de ràfeg",
+            "",
+            "Per únicament limitar la velocitat de pic utilitzem el traffic shaping."
+        ],
+        "answer": "El mecanisme WRED permet aplicar a cada tràfic una probabilitat de pèrdua de",
+        "times_asked": 0
+    },
+    {
+        "question": "Quina afirmació és correcta:",
+        "options": [
+            "Els mecanismes més utilitzats de control de congestió són el CBWFQ, RED i WRED",
+            "El mecanisme WRED permet aplicar a cada tràfic una probabilitat de pèrdua de  paquets diferent.",
+            "El millor mecanismes d’encuament per garantir la QoS a diferents tràfics de dades és  el Priority Queue.",
+            "Els mecanismes de control de congestió i de scheduling permeten modificar i  adaptar el tràfic de l’usuari a les millors condicions amb que la xarxa el pot transmetre."
+        ],
+        "answer": "Utilitza el camp DSCP per diferenciar les diferents classes de servei.",
+        "times_asked": 0
+    },
+    {
+        "question": "Quina afirmació és incorrecta sobre l’arquitectura de qualitat de servei IntServ:",
+        "options": [
+            "Utilitza el protocol de senyalització RSVP per implementar el CAC i la reserva de  recursos.",
+            "Ofereix tres tipus de serveis: best-effort, controlled load i guaranteed bit rate.",
+            "Utilitza el camp DSCP per diferenciar les diferents classes de servei.",
+            "Utilitza els mecanismes de WRED i WFQ en els nodes interns de la xarx",
+            ""
+        ],
+        "answer": "Utilitza el IP Precedence per oferir diferents probabilitats de pèrdua de paquets.",
+        "times_asked": 0
+    },
+    {
+        "question": "Quina afirmació és incorrecta sobre l’arquitectura de qualitat de servei DiffServ:",
+        "options": [
+            "Permet utilizar RSVP o COPS per implementar la reserva de recursos en la xarx",
+            "",
+            "Ofereix tres tipus de serveis: best-effort, assured forwarding i expedited forwarding.",
+            "Utilitza el camp DSCP per diferenciar les diferents classes de servei.",
+            "Utilitza el IP Precedence per oferir diferents probabilitats de pèrdua de paquets."
+        ],
+        "answer": "El DSCP defineix quatre classes diferents de servei AF amb 3 probabilitats de pèrdua",
+        "times_asked": 0
+    },
+    {
+        "question": "Sobre els camps “IP Precedence” i “DSCP”:",
+        "options": [
+            "El camp IP Precedence està en la capçalera IPv4 i el DSCP en la d’IPv6.",
+            "El IP Precedence defineix 8 prioritats diferents per tràfic de dades d’usuari.",
+            "El DSCP defineix quatre classes diferents de servei AF amb 3 probabilitats de pèrdua  de paquets diferents per cada classe.",
+            "L’arquitectura DiffServ utilitza indiferentment el IP Precedence o el DSCP."
+        ],
+        "answer": "Els mencaismes de QoS s’implementes tant a nivel de xarxa com a nivel d’enllaç.",
+        "times_asked": 0
+    },
+    {
+        "question": "Quina de les següent afirmacions és correcta:",
+        "options": [
+            "La Internet actual s’ha d’implementar en la seva totalitat aplicant mecanismos de  QoS.",
+            "Els mencaismes de QoS s’implementes tant a nivel de xarxa com a nivel d’enllaç.",
+            "Els mecanismos de QoS són imprescindibles en les xarxes de commutació de circuits.",
+            "La QoS permetes integrar amb garanties diferents aplicacions únicamente en xarxes  IP."
+        ],
+        "answer": "La variació del retard o Jitter està provocada pel diferent temps de commutació que",
+        "times_asked": 0
+    },
+    {
+        "question": "Quina de les següents afirmacions és incorrecta?",
+        "options": [
+            "El retard extrem a extrem está format pels retards de propagaci´ó, commutació,  encuament i serilització.",
+            "El retard de serialització és inversament proporcional a la velocitat de transmissió.",
+            "La pèrdua de paquests és un feònmen característic de les xarxes de commutació de  paquets.",
+            "La variació del retard o Jitter està provocada pel diferent temps de commutació que  pateixen els parquests en els nodes que formen part d’una xarxa de commutació de  paquets."
+        ],
+        "answer": "Tant els nodes P com els PE realitzen les funcions de congestió, queueing i",
+        "times_asked": 0
+    },
+    {
+        "question": "Sobre els blocs funcionals que formen part d’una arquitectura de QoS:",
+        "options": [
+            "Els nodes P realitzen les funcions de classificació, mesur, marcatge, policing i/o  shaping.",
+            "Els condicionadors de tràfic s’implementen tant en els nodes PE com ens els nodes  P.",
+            "Tant els nodes P com els PE realitzen les funcions de congestió, queueing i  scheduling.",
+            "A nivell de dades d’usuari s’implementa el CAC i la reserva de recursos."
+        ],
+        "answer": "Les mètriques per mesurar el tràfic d’entrada són la velocitat mitja, velocitat de pic i",
+        "times_asked": 0
+    },
+    {
+        "question": "Sobre els condicionadors de tràfic:",
+        "options": [
+            "Les mètriques per mesurar el tràfic d’entrada són la velocitat mitja, velocitat de pic i  el tamany de ràfeg",
+            "",
+            "Els paquests no es poden classificar per l’interfície d’entrad",
+            "",
+            "La tècnica de traffic policing pot provocar l’augment del jitter en la notra xarx",
+            "",
+            "Per únicament limitar la velocitat de pic utilitzem el trafffic shaping."
+        ],
+        "answer": "Els mecanismes més utilitzats de control de congestió són el RED i WRED",
+        "times_asked": 0
+    },
+    {
+        "question": "Quina afirmació és incorrecta sobre l’arquitectura de qualitat de servei IntServ:",
+        "options": [
+            "Utilitza els mecanismes de WRED i WFQ en els nodes interns de la xarx",
+            "",
+            "Utilitza el camp DSCP per diferenciar les diferents classes de servei.",
+            "Utilitza el protocol de senyalització RSVP per implementar el CAC i la reserva de  recursos.",
+            "Ofereix tres tipus de serveis: best-effort, controlled load i guaranted bit rate."
+        ],
+        "answer": "LLQ: PQ+CBWFQ. L'usarem per prioritzar sempre el tràfic prioritari i separar per",
+        "times_asked": 0
+    },
+    {
+        "question": "Quina afirmació és incorrecta sobre l'arquitectura de qualitat de servei DiffServ:",
+        "options": [
+            "Utilitza el IP Precedence per oferir diferents probabilitats de pèrdua de paquets.",
+            "Classifica el tràfic en: best-effort, assured forwarding i expedited forwarding.",
+            "Utilitza el camp DSCP o IP Precedence per diferenciar les diferents classes de servei.",
+            "Permet utilitzar RSVP o COPS per implementar la reserva de recursos en la xarx",
+            ""
+        ],
+        "answer": "En el format Tos, el camp \"Type of Service\" de 4 bits no s'utilitza)",
+        "times_asked": 0
+    },
+    {
+        "question": "Quina afirmació és correcta sobre les mecanismes de scheduling.  a), Priority Queuing: És una disciplina molt estricta que penalitza totes les cues.",
+        "options": [
+            ", Priority Queuing: És una disciplina molt estricta que penalitza totes les cues.",
+            "LLQ: PQ+CBWFQ. L'usarem per prioritzar sempre el tràfic prioritari i separar per  classes la resta de tràfi",
+            "",
+            "WEQ: És una disciplina molt estricta que penalitza les cues d'alta prioritat.",
+            "Custom Queuing: Existeix una única cua on el primer paquet que arriba és el primer  paquet que surt."
+        ],
+        "answer": "We will always choose according to the goal we want to achieve",
+        "times_asked": 0
+    },
+    {
+        "question": "Sobre els camps \"IP Precedence\" i \"DSCP\":",
+        "options": [
+            "El camp IP Precedence està en la capçalera IPv4 i el DSCP en la d'IPv6.",
+            "EI DSCP defineix sis classes diferents de servei amb 3 probabilitats de pèrdua de  paquets diferents per cada classe.",
+            "El IP Precedence defineix 16 classes diferents de tràfi",
+            "",
+            "En el format Tos, el camp \"Type of Service\" de 4 bits no s'utilitz",
+            ""
+        ],
+        "answer": "3DES is a symmetric cryptography algorithm based on DES that uses 112-bit keys",
+        "times_asked": 0
+    },
+    {
+        "question": "If we can choose between symmetric cryptography, asymmetric cryptography and  Hash functions:",
+        "options": [
+            "We will choose hash functions whenever we want to encrypt a password",
+            "We will always choose asymmetrical because it is more secure",
+            "We will always choose symmetrical because it is more efficient",
+            "We will always choose according to the goal we want to achieve"
+        ],
+        "answer": "ROT13",
+        "times_asked": 0
+    },
+    {
+        "question": "Choose the wrong answer:",
+        "options": [
+            "Hash functions transform an arbitrary length message “uniquely” into a constant  length message",
+            "AES is a symmetric cryptographic algorithm, with key lengths of 128, 192 and 256  bits, which is considered efficient, secure and easy to implement",
+            "Elliptic Curve Cryptography is a variant of asymmetric cryptography that, for the  same level of security, uses much smaller keys than RSA",
+            "3DES is a symmetric cryptography algorithm based on DES that uses 112-bit keys  and always generates a 56-bit result"
+        ],
+        "answer": "Digital disponibility",
+        "times_asked": 0
+    },
+    {
+        "question": "What algorithm does not belong to modern cryptography?",
+        "options": [
+            "RC4",
+            "ECC",
+            "ROT13",
+            "DES"
+        ],
+        "answer": "Blowfish is a secret algorithm than can only be used if you have the Linux password",
+        "times_asked": 0
+    },
+    {
+        "question": "Which one is not an application of Cryptography:",
+        "options": [
+            "Digital signature",
+            "Digital disponibility",
+            "Digital envelope",
+            "Digital certificate"
+        ],
+        "answer": "A public key used for RSA can be also used for ECC",
+        "times_asked": 0
+    },
+    {
+        "question": "Regarding symmetric cryptographic algorithms choose the incorrect statement:",
+        "options": [
+            "3DES uses a 112 bits key and, for each input block, generates a 64 bits output block",
+            "RC4 is a stream cipher algorithm",
+            "AES is more efficient than DES and 3DES and accepts keys of variable length",
+            "Blowfish is a secret algorithm than can only be used if you have the Linux password"
+        ],
+        "answer": "A digital certificate is an electronic document used to prove the ownership of public",
+        "times_asked": 0
+    },
+    {
+        "question": "Choose the incorrect sentence:",
+        "options": [
+            "\"Root Certification Agencies\" certificates are already preinstalled in the web  browser software",
+            "A public key used for RSA can be also used for ECC",
+            "The certificate of www.salleurl.edu has been signed by \"Starfield Secure Certificate  Authority - G2\"",
+            "The certificate for www.salleurl.edu/ca is the same than the one for  www.salleurl.edu/en"
+        ],
+        "answer": "In a digital signature operation with asymmetric cryptography the sender signs with",
+        "times_asked": 0
+    },
+    {
+        "question": "Choose the wrong statement about \"Digital certificates\":",
+        "options": [
+            "A digital certificate contains the public key of the certificate issuer",
+            "HTTPS uses digital certificates",
+            "X.509 is a standard that defines the format of public keys certificates",
+            "A digital certificate is an electronic document used to prove the ownership of public  key"
+        ],
+        "answer": "It uses IPSec over TLS",
+        "times_asked": 0
+    },
+    {
+        "question": "Which statement is correct:",
+        "options": [
+            "In an asymmetric cryptographic encryption operation, the sender encrypts with its  secret key and the receiver decrypts with the sender’s public key",
+            "In a digital signature operation with asymmetric cryptography the sender signs with  his secret key and the receiver verifies with the public key of the sender",
+            "In a digital signature operation with asymmetric cryptography, the sender signs with  the receiver’s public key and the receiver verifies it with his secret key",
+            "In an encryption operation with symmetric cryptography, the sender encrypts with  the receiver’s public key and the receiver decrypts it with his secret key        TEMA 5 - VPNs"
+        ],
+        "answer": "SSL 3.0",
+        "times_asked": 0
+    },
+    {
+        "question": "Which statement is not correct about GlobalProtect VPN:",
+        "options": [
+            "It uses IPSec over TLS",
+            "It uses TLS to negotiate the parameters",
+            "It's an IPSec VPN",
+            "It's a remote access VPN"
+        ],
+        "answer": "TLS 1.1",
+        "times_asked": 0
+    },
+    {
+        "question": "Mark all deprecated or non-existing protocols:",
+        "options": [
+            "SSL 3.0",
+            "TLS 1.3",
+            "TLS 3.0",
+            "TLS 1.4  e) TLS 2.0  f) SSL 2.0  g) TLS 1.0  h) TLS 1.2  i) TLS 1.1  j) SSL 1.0"
+        ],
+        "answer": "SSL/TLS is used to implement \"site-to-site\" VPNs",
+        "times_asked": 0
+    },
+    {
+        "question": "Select all TLS versions accepted by blogs.salleurl.edu (multichoice):",
+        "options": [
+            "TLS 1.0",
+            "TLS 1.1",
+            "TLS 1.3",
+            "TLS 1.2"
+        ],
+        "answer": "Choosing \"Diffie-Hellman\" group 19 or 20",
+        "times_asked": 0
+    },
+    {
+        "question": "Select the incorrect statement:",
+        "options": [
+            "SSL/TLS is user to implement \"remote access\" VPNs",
+            "IPSec is used to implement \"site-to-site\" VPNs",
+            "SSL/TLS is used to implement \"site-to-site\" VPNs",
+            "IPSec is user to implement \"remote access\" VPNs"
+        ],
+        "answer": "Blocking UDP port 4501 you will only block IPSec traffic that uses NAT-T",
+        "times_asked": 0
+    },
+    {
+        "question": "What are the phases to stablish an IPSec tunnel:",
+        "options": [
+            "IKE phase 1  IKE phase 2  AH  ESP",
+            "IKE  AH  ESP",
+            "IKE phase1  IKE phase2  Data transfer using AH or ESP",
+            "ISAKMP  IKE  AH or ESP"
+        ],
+        "answer": "1 during IKE phase 1 and 3 during IKE phase 2",
+        "times_asked": 0
+    },
+    {
+        "question": "How do we configure \"Elliptic curves\" to be used in an IPSec tunnel?",
+        "options": [
+            "Negotiating the TLS \"Security Associations\" parameters",
+            "Choosing \"Elliptic curves\" as the Hashing algorithm for IKE phase 1",
+            "Choosing \"Diffie-Hellman\" group 19 or 20",
+            "IPSec do not accept Diffie-Hellman"
+        ],
+        "answer": "SSL/TLS",
+        "times_asked": 0
+    },
+    {
+        "question": "How can we block ALL IPSec traffic in a Firewall?",
+        "options": [
+            "Blocking TCP or UDP to or from port 443",
+            "Blocking UDP port 4501 you will only block IPSec traffic that uses NAT-T",
+            "Blocking TCP or UDP to or from port 80",
+            "Blocking UDP to or from port 4501"
+        ],
+        "answer": "44.55.64.1 i 44.55.67.254",
+        "times_asked": 0
+    },
+    {
+        "question": "How many secure channels will be stablished between two routers that want to  establish 3 IPSec tunnels between them?",
+        "options": [
+            "1 during IKE phase 1 and 1 during IKE phase 2",
+            "3 during IKE phase 1 and 1 during IKE phase 2",
+            "3 during IKE phase 1 and 3 during IKE phase 2",
+            "1 during IKE phase 1 and 3 during IKE phase 2"
+        ],
+        "answer": "En la commutació de paquets amb \"circuits virtuals\", la informació del mateix circuit",
+        "times_asked": 0
+    },
+    {
+        "question": "What is the best and most secure protocol for setting up remote access VPN  without complex configurations?",
+        "options": [
+            "SSL/TLS",
+            "L2TP",
+            "IPSec",
+            "PPTP        TEMA 6 – MPLS    1)  Quina afirmació és certa sobre MPLS?",
+            "MPLS integra i relaciona les funcionalitats d’encaminament de nivell 2 amb les  funcions de commutació de nivell 3",
+            "Si MPLS funciona sobre Frame Relay, utilitzarà el camp de DLCI com a etiqueta   c  Si MPLS funciona sobre Ethernet, afegirà la capçalera genèrica MPLS per poder  etiquetar",
+            "En MPLS es prenen decisions d’encaminament a cada salt de la ruta, igual que en IP     2)  Quina afirmació és certa sobre MPLS?",
+            "MPLS és un protocol dissenyat per transportar paquets multicast sobre una xarxa IP",
+            "Si MPLS funciona sobre PPP, opcionalment es pot afegir una capçalera genèrica MPLS  per poder etiquetar",
+            "MPLS pot funcionar sobre IP, perquè el paquet IP té un camp específic per poder  etiquetar els paquets",
+            "Un LSP és un camí virtual que segueixen tots els paquets assignats a un mateix FEC     3)  Què és un LSR en MPLS?",
+            "Un LSR només pot ser un router, ja que ha d’implementar funcions d’encaminament",
+            "Un LSR és un dispositiu MPLS que només implementa la distribució d’etiquetes, però  no reenvia els paquets de dades",
+            "Un LSR pot ser un switch ATM o un router IP amb noves funcionalitats incorporades",
+            "Un LSR només pot ser un switch, perquè ha de commutar les etiquetes dels paquets  que rep     4)  Quina de les següents afirmacions és certa:",
+            "Els LSP de MPLS són com els VPI/VCI d'ATM",
+            "Els FEC de MPLS són com els VCC d'ATM",
+            "Els Labels de MPLS equivalen als DLCI de FR o a les adreces de 20 bytes d'ATM",
+            "Els LSR de MPLS equivalen als switchos en ATM     5)  Quina afirmació és correcta en MPLS?",
+            "El protocol LDP realitza l’intercanvi d’informació d’etiquetes",
+            "El protocol LSP realitza la commutació d’etiquetes",
+            "El protocol LSR és el protocol de routing en MPLS",
+            "El protocol FEC escull la millor etiqueta per cada flux d’informació     6)  Quina afirmació és incorrecta sobre la tecnologia MPLS?",
+            "MPLS pot funcionar sobre el protocol IP",
+            "MPLS pot funcionar sobre el protocol Frame Relay",
+            "MPLS pot funcionar sobre el protocol ATM",
+            "MPLS pot funcionar sobre el protocol Ethernet           7)  Quina afirmació és correcta sobre la tecnologia MPLS?",
+            "MPLS pot funcionar sobre el protocol IP",
+            "MPLS pot funcionar sobre el protocol IPX",
+            "MPLS pot funcionar sobre el protocol HTTP",
+            "MPLS pot funcionar sobre el protocol PPP     8)  En MPLS, la tècnica Penultimate Hop Poping  ̧permet",
+            "Reduir el tamany de la capçalera MPLS.",
+            "Augmentar el tamany de la capçalera MPLS.",
+            "Reduir el temps de processament de paquets en els LERs.",
+            "Reduir el temps de processament de paquets en els LSRs.     9) Indica l’afirmació incorrecta sobre la trama 5 de la següent captura:",
+            "Hem capturat un paquet IP transportat sobre MPLS on el nivell 2 és Ethernet.",
+            "Podem observar com en el cas de MPLS sobre Ethernet si que s’utilitza la capçalera  MPLS.",
+            "Hem capturat un missatge “Echo request” de ICMP.",
+            "La capçalera MPLS inclou un camp EXP de protecció d’errors.     10) Novament sobre la captura anterior, quina afirmació és correcta ?",
+            "La trama l’ha generat un LSR que ha aplicat Penultimate Hop Poping.",
+            "Podem veure com la capçalera MPLS inclou informació sobre el FEC associat.",
+            "Aquesta trama MPLS l’associem al LSP corresponent a través del camp Label que en  aquest cas val 21.",
+            "Podem observar com el camp “protocol” de la capçalera IP ens indica que el protocol  transportat és MPLS.         TEMA 7 – SERVEIS MPLS     1)  Quina afirmació és certa sobre Metro-Ethernet (ME)?",
+            "En entorns MAN les tecnologia s’anomenen Carrier Ethernet",
+            "ME només pot funcionar sobre IP",
+            "En ME les decisions d’encaminament es prenen a cada salt de la ruta",
+            "La tecnologia ME permet el transport de VLANs entre seus remotes     2)  Quina afirmació és incorrecta en Metro-Ethernet (ME)?",
+            "ME permet un aprovisionament ràpid a la xarxa",
+            "ME pot funcionar sobre SONET",
+            "ME només pot funcionar amb interfícies superiors a 1GBE",
+            "ME permet la connexió de seus usuàries distants en un mateix bridged domain     3)  Què és un PE en Carrier Ethernet?",
+            "Un PE només pot ser un switch, perquè ha de commutar les etiquetes dels paquets  que rep",
+            "Un PE equival a un LSP de MPLS",
+            "Un PE pot ser un switch ATM, o un router IP amb noves funcionalitats incorporades",
+            "Un PE només tindrà connexions amb altres PE de la xarxa Metro-Ethernet (ME)     4)  Quina de les següents afirmacions és certa?",
+            "Els EVC de Carrier Ethernet són com els FEC de MPLS",
+            "Els CE de Carrier Ethernet són com els LSR de MPLS",
+            "Els EVC de Carrier Ethernet són com els VCC d’ATM",
+            "L’identificador de Pseudowire és com el VPI/VCI de FR     5)  Quina afirmació és certa sobre certa terminologia MEF?",
+            "La interfície UNI la proporciona el client",
+            "La interfície NNI només pot anar a velocitats de 1GBE",
+            "Cada EVC disposarà d’un identificador únic a la xarxa del proveïdor de serveis",
+            "Un EVC realitza una connexió lògica entre una interfície UNI i una interfície NNI     6)  Quina afirmació és certa sobre els serveis que ofereix Metro-Ethernet (ME)?",
+            "Els serveis EVPL són els serveis més populars degut a la seva simplicitat",
+            "Caldrà marcar amb el tag 802.1q els serveis EPL per diferenciar-los d’altres serveis",
+            "En els serveis EVPL el client no pot marcar els seus paquets amb les seves pròpies  vlans",
+            "Els serveis EVP-LAN són serveis multipunt on a la interfície d’entrega s’agreguen varis  EVCs     7)  Quina afirmació és certa sobre VPLS?",
+            "Els serveis VPLS els diferenciem en EP-LAN i en EVP-LAN",
+            "Per cada vlan de client haurem de configurar una instància VPLS",
+            "Les connexions full mesh entre els diferents PE es formaran utilitzant el protocol OSPF",
+            "Cada router CE de la xarxa crea una taula VSI per identificar les diferents instàncies  VPLS   8  Quina afirmació és incorrecta sobre Metro-Ethernet (ME)?",
+            "ME proporciona connectivitat ethernet a nivell MAN o WAN, amb el cost operacional  de Ethernet",
+            "ME es pot implementar sobre diferents tecnologies, entre les que podem destacar  MPLS, ATM, SONET i WiMAX",
+            "La implementació de ME sobre MPLS implica utilitzar el servei de VPLS (Virtual Private  LAN Service",
+            "El servei de VPLS permet implementar connexions punt - multipunt   -----  9) Which statement is true about MPLS?",
+            "MPLS can run over IP, because the IP packet has a specific field to be used as the label",
+            "An LSP is a virtual path that all packets assigned to the same FEC follow",
+            "MPLS integrates the level 2 routing functionalities with the level 3 switching functions",
+            "In MPLS routing decisions are made hop by hop, as in IP    10) What is an LSR in MPLS?",
+            "An LSR is an MPLS device that only implements label distribution, but does not  forward data packets",
+            "An LSR is both a switch and a router as it implements both functionalities",
+            "An LSR can only be a switch, because it has to switch the labels of the packets it  receives",
+            "An LSR can only be a router, as it must implement routing functions    11) Which statement is correct in MPLS",
+            "The LDP protocol performs the exchange of label information",
+            "The LSR protocol is the routing protocol in MPLS",
+            "The FEC protocol chooses the best label for each information flow",
+            "The LSP protocol performs the label switching    12) Which statement is incorrect about MPLS technology?",
+            "MPLS can be encapsulated over PPP",
+            "IP is encapsulated over MPLS",
+            "MPLS is encapsulated inside and Ethernet frame",
+            "MPLS is encapsulated inside and IP packet    13) Select the incorrect statement about frame 5 of the following image:",
+            "We have captured an ICMP “Echo request” message",
+            "It's an IP packet transported over MPLS where level 2 is Ethernet",
+            "The MPLS header includes an EXP field (Experimental Bits) for QoS",
+            "We  can  observe  how  the  “protocol”  field  of  the  IP  header  indicates  that  the  transported protocol is MPLS    14) Which statement is true about Metro-Ethernet (ME)?",
+            "In MAN environments the technology is called Carrier Ethernet",
+            "The ME technology allows the transport of VLANs between remote locations",
+            "We cannot connect two routers using ME",
+            "ME can only be implemented over IP  15) Which statement is incorrect about Metro-Ethernet (ME)?",
+            "The VPLS service allows the implementation of multipoint-to-multipoint connections",
+            "The implementation of ME over MPLS involves using the VPLS service (Virtual Private  LAN Service)",
+            "ME can be implemented over different technologies, among which we can highlight  MPLS, SONET and WiMAX",
+            "ME provides Ethernet connectivity at MAN or WAN level with the operational cost of  Ethernet    16) What functionality does the Router Distinguisher (RD) perform on VPN-MPLS?",
+            "Defines backup paths distinguishing between different priorities",
+            "Combines QoS techniques to improve service.",
+            "Complements routers when the computational load is high",
+            "Solves the problem of overlapping prefixes between different clients    17) Regarding the architecture of the PE router in an MPLS-VPN, which statement is  true?",
+            "There is a VRF per customer with one global shared routing table",
+            "There is a global VRF and a global routing table",
+            "There is a VRF per customer with its associated routing table and a global routing table",
+            "It is a monolithic implementation, with a single routing table    18) Regarding MPLS Services, which statement is correct?",
+            "Carrier Ethernet technology has the same behavior as a switch and a Pseudowire as a  router",
+            "Metro Ethernet technology has the same behavior as a switch and VPLS as a router",
+            "VPLS technology has the same behavior as a switch and Metro-Ethernet as a router",
+            "VPLS technology has the same behavior as a switch and a Pseudowire as a cable        PUNT DE CONTROL – 1"
+        ],
+        "answer": "Connectar-los amb dos enllaços i crear una agregació mitjançant el protocol LACP",
+        "times_asked": 0
+    },
+    {
+        "question": "Quan parlem de xarxes commutades poden afirmar que:",
+        "options": [
+            "Xarxes commutades en mode data rama són més flexibles, però menys fiables que",
+            "les de circuits virtuals .   xarxes de circuits virtuals tenen una fase d’establiment de la connexió.",
+            "En la commutació de paquets orientada a connexió els paquets arriben desordenats,   ja que no tots segueixen el mateix camí",
+            "En la commutació de paquets amb \"circuits virtuals\", la informació del mateix circuit  es multiplexa per diferents camins"
+        ],
+        "answer": "Configurar \"policy-routing\" en RFI",
+        "times_asked": 0
+    },
+    {
+        "question": "Quina  afirmació  és  correcta  si  volem  iinterconnectar  dos  switchos  Ethernet  i  assegurar la disponibilitat en cas de fallada d'un dels enllaços entre ambdós switchos:",
+        "options": [
+            "Connectar-los amb dos enIlaços a 10 Gbps",
+            "Connectar-los amb dos enllaços i crear una agregació mitjançant el protocol LACP",
+            "Connectar-los amb dos enllaços i activar el protocol Spanning-tree en l'enllaç  principal",
+            "Connectar-los amb dos enllaços i configurar 802.1q en ambdós enllaços.     4- Quina opció no vàlida per implementar el routing entre 3 VLANs diferents en una  xarxa Ethernet:",
+            "Utilitzar un switch router",
+            "Utilivar un routce amb 3 interficies ethernet",
+            "Utilitzar un switch que ens permeti crear 2 VRFs",
+            "Utilitzar un router amb 2 interfícies ethernet les quals les agreguem mitjançant LACP  i creem interfícies virtuals sobre l’agregació resultant"
+        ],
+        "answer": "Through the copper coating of the submarine cable.",
+        "times_asked": 0
+    },
+    {
+        "question": "La nostra xarxa està connectada a Internes mitjançant un equip RFI, el qual fa tant  les funcions de Router com de Firewall, a través dc ducs connexions WAN diferents  (wan1 i wan2), cadascuna cap a un ISP diferent. Per tal d'encaminar per la interfície  wan2 tot el tràfic que vingui de la nostra xarxa interna 10.1.1.0/24 i que vagi cap a  Internet caldrà:",
+        "options": [
+            "Configurar convenientment la taula de Routing de RF1",
+            "Configurar LACP entre ambdues connexions WAN",
+            "Configurar NAT en la interfície wan2",
+            "Configurar \"policy-routing\" en RFI"
+        ],
+        "answer": "The nodes located at the limit of the network perform the functions of classification,",
+        "times_asked": 0
+    },
+    {
+        "question": "Quines de Ies següents són tecnologies d'accés?",
+        "options": [
+            "WIMAX, FBI311, LAN",
+            "LAN, 3G, FTTI",
+            "ADSL, 2G, M1-1",
+            "AES, 5G, 4G"
+        ],
+        "answer": "Uses parameters such as source address or TCP port in order to enroute packets",
+        "times_asked": 0
+    },
+    {
+        "question": "Regarding submarine cables, how are intermediate optical amplifiers powered?",
+        "options": [
+            "They are passive amplifiers, no need to power them",
+            "Induction mechanisms, usinig magnetic fields",
+            "Through the copper coating of the submarine cable.",
+            "Amplifiers are powered using batteries."
+        ],
+        "answer": "Symmetric cryptography algorithms include key distribution mechanisms such as",
+        "times_asked": 0
+    },
+    {
+        "question": "On the functional blocks that arc part of a QoS architecture:",
+        "options": [
+            "The nodes located at the limit of the network perform the functions of classification,  measurement, marking, policing and / or shaping.",
+            "CAC and the resources reservation are implemented in the user plane.",
+            "The traffic compensation modules arc implemented both in the internal nodes as  nodes of the network boundary.",
+            "The internal nodes of the network carry out the functions of policing / shaping,  control of congestion and scheduling."
+        ],
+        "answer": "Hash functions transform a message of arbitrary length of \"unique\" form to a",
+        "times_asked": 0
+    },
+    {
+        "question": "What statement is correct about PBR:",
+        "options": [
+            "Uses Policies in the Border Router to improve efficiency",
+            "It allows routers to work with layer 2 protocols.",
+            "Uses parameters such as source address or TCP port in order to enroute packets",
+            "Uses encryption mechanisms during packet routing."
+        ],
+        "answer": "Encrypt data with receiver's public key",
+        "times_asked": 0
+    },
+    {
+        "question": "Regarding symmetric cryptography algorithms, which statement is wrong?",
+        "options": [
+            "They use the same key to encrypt and decrypt",
+            "Symmetric cryptography algorithms include key distribution mechanisms such as  IDEA",
+            "DES uses 56 bits keys while AES uses 128, 192 or 256 bits keys.",
+            "The main advantage of this type of cryptography is its encryption speed. but they  suffer a serious problem which is the management (distribution) of the keys"
+        ],
+        "answer": "Encrypt the hash of the message with our private key",
+        "times_asked": 0
+    },
+    {
+        "question": "Which statement is wrong?",
+        "options": [
+            "RSA is an asymmetric cryptography algorithm that uses 1024, 2048 or 4096 bits keys  mainly",
+            "Hash functions transform a message of arbitrary length of \"unique\" form to a  message of constant length",
+            "To implement the \"digital envelope\" we use symmetrical cryptography, asymmetric  cryptography anti-hash functions",
+            "To implement the \"digital signature\" we use asymmetric cryptography and hash  functions"
+        ],
+        "answer": "Is a symmetric cryptography algorithm",
+        "times_asked": 0
+    },
+    {
+        "question": "To ensure privacy we have to:",
+        "options": [
+            "Encrypt data with our public key",
+            "Encrypt data with receiver's public key",
+            "Encrypt data with our private key",
+            "Encrypt data with receiver's private key"
+        ],
+        "answer": "0",
+        "times_asked": 0
+    },
+    {
+        "question": "To ensure message integrity we have to:",
+        "options": [
+            "Encrypt the message with our private key",
+            "Encrypt the hash of the message with our private key",
+            "Encrypt the message with the receiver's public key",
+            "Encrypt the hash of the message with the receiver's public key"
+        ],
+        "answer": "145.83.255.254",
+        "times_asked": 0
+    },
+    {
+        "question": "\"Blowfish\" is:",
+        "options": [
+            "Is a symmetric cryptography algorithm",
+            "Is an asymmetric cryptography algorithm",
+            "Is a hash algorithm",
+            "Is a quantum cryptography algorithm"
+        ],
+        "answer": "Implementar diferents instancies de routing en el mateix equip.",
+        "times_asked": 0
+    },
+    {
+        "question": "How many keys does SHA256 use?",
+        "options": [
+            "0",
+            "1",
+            "2",
+            "256        FINAL - 1"
+        ],
+        "answer": "Cal implementar els mecanismes per suportar DiffServ.",
+        "times_asked": 0
+    },
+    {
+        "question": "Quina és la darrera adreça de host útil de la subxarxa 145.82.0.0/15?",
+        "options": [
+            "145.82.0.254",
+            "145.83.0.254",
+            "145.82.255.254",
+            "145.83.255.254"
+        ],
+        "answer": "DS-MPLS-TE combina tècniques de TE amb QoS en MPLS.",
+        "times_asked": 0
+    },
+    {
+        "question": "La funcionalitat VRF (Virtual Routing Forwarding) permet:",
+        "options": [
+            "Implementar diferents instancies de routing en el mateix equip.",
+            "Convertir un router de nivel 3 en un switch de nivel 2.",
+            "Dotar de funcionalitats de routing a un switch de nivel 1.",
+            "Dotar de funcionalitats de routing a un switch-router."
+        ],
+        "answer": "Soluciona el problema del solapament d’adreces entre diferents clients.",
+        "times_asked": 0
+    },
+    {
+        "question": "En implementar QoS en una xarxa MPLS:",
+        "options": [
+            "Cal utilizar protocols de routing com OSPF o ISIS.",
+            "Es canvia l’algorisme LDP pel CSPF.",
+            "És obligatori utilizar protocols de senyalització que suportin QoS, com RSVP.",
+            "Cal implementar els mecanismes per suportar DiffServ."
+        ],
+        "answer": "Està format per 32 bits.",
+        "times_asked": 0
+    },
+    {
+        "question": "Respecte MPLS, quina afirmació és correcta?",
+        "options": [
+            "DS-MPLS-TE combina tècniques de TE amb QoS en MPLS.",
+            "MPLS-TE permet dividir el BW disponible en cada enllaç entre les diferents  prioritats.",
+            "TE es basa en definir diferents classes de servei dins del mateix VC.",
+            "MPLS-TE permet evitar congestions en la xarxa redistribuint convenientment els  FEC."
+        ],
+        "answer": "El DSCP defineix sis classes diferents de servei AF amb 4 probabilitats de pèrdua de",
+        "times_asked": 0
+    },
+    {
+        "question": "Quina funcionalitat relitza el Route Distinguisher (RD) de les VPN-MPLS?",
+        "options": [
+            "Complementa els routers quan la càrrega computacional és elevada.",
+            "Defineix rutes de backup distingint entre diferents prioritats.",
+            "Soluciona el problema del solapament d’adreces entre diferents clients.",
+            "Combina tècniques de QoS per millorar el servei."
+        ],
+        "answer": "Es classifiquen en dues categories: Serveis Integrats (IntServ) i Serveis Diferenciats",
+        "times_asked": 0
+    },
+    {
+        "question": "Respecte el Route Distinguisher (RD) de les VPN-MPLS, quina afirmació és  incorrecta?",
+        "options": [
+            "Està format per 32 bits.",
+            "Es pot utilitzar com a indentificador de la VPN-MPLS.",
+            "És un prefix únic per cada VPN-MPLS.",
+            "S’afegeix a les adreces dels cleints per evitar solapament d’espais d’adreçament."
+        ],
+        "answer": "Hi ha una VRF per client amb la seva taula de rutes associada i una taula de rutes",
+        "times_asked": 0
+    },
+    {
+        "question": "Indica la resposta incorrecta sobre els camps IP Precedene i DSCP.",
+        "options": [
+            "El IP Precedence i el DSCP es troben tant a la capçalera IPv4 com a la IPv6.",
+            "El IP Precedeence permet definer 8 prioritats diferents de tràfic.",
+            "El DSCP defineix sis classes diferents de servei AF amb 4 probabilitats de pèrdua de  paquets diferents per cada clase.",
+            "L’arquitectura DiffServ pot utilitzar tant el IP Precedence com el DSCP."
+        ],
+        "answer": "La implementació de ME sobre MPLS implica utilizar tunelitzacions encriptades.",
+        "times_asked": 0
+    },
+    {
+        "question": "Quina afirmació és correcta respecte a les arquitectures de QoS:",
+        "options": [
+            "S’implementa tant a nivell 2 com a nivel 3.",
+            "Es classifiquen en dues categories: Serveis Integrats (IntServ) i Serveis Diferenciats  (DiffServ).",
+            "MPLS disposa de la seva propia arquitectura de QoS, totalmente diferente de les  arquitectures IntServ i DiffServ.",
+            "MPLS implementa l’arquitectura IntServ."
+        ],
+        "answer": "MetroEthernet és la tecnología preferida actualmente enfron del CarrierEthernet.",
+        "times_asked": 0
+    },
+    {
+        "question": "Pel que fa a l’arquitectura del router PE en una MPLS-VPN, quina afirmació és  certa?",
+        "options": [
+            "És una implementación monolítica, amb una única taula de rutes.",
+            "Hi ha una VRF per client i una taula de rutes global.",
+            "Hi ha una VRF global i una taula de rutes global.",
+            "Hi ha una VRF per client amb la seva taula de rutes associada i una taula de rutes  globals."
+        ],
+        "answer": "Un LSR és tant un switch i un router ja que implementa ambues funcionalitats.",
+        "times_asked": 0
+    },
+    {
+        "question": "Quina afirmació és incorrecta sobre Metro-Ethernet (ME)?",
+        "options": [
+            "ME proporciona connectivitat Ethernet a nivel MAN o WAN, amb el cost operacional  de Ethernet.",
+            "ME es pot implementar sobre diferents tecnologies, entre les que podem destacar  MPLS, SONET i WiMAX.",
+            "La implementació de ME sobre MPLS implica utilizar tunelitzacions encriptades.",
+            "ME equival a implementar VPNs de nivel 2 on el protocol transportat és Ethernet."
+        ],
+        "answer": "L’operador implementa un protocol de routing específic per cada client.",
+        "times_asked": 0
+    },
+    {
+        "question": "Quina afirmació és incorrecta sobre Metro-Ethernet (ME)?",
+        "options": [
+            "ME permet transportar trames Ethernet amb capçalera IEEE-802.1q, per tal  d’interconnectar diverses VLANs entre dues o més seus remotes.",
+            "MetroEthernet és la tecnología preferida actualmente enfron del CarrierEthernet.",
+            "Els pseudowires permeten implementar serveis de connectivitat multipunt.",
+            "Els clients de MetroEthernet es connecten als nodes PE, els quals enruten les trames  Ethernet segons l’adreça destí."
+        ],
+        "answer": "La tecnología VPLS té el mateix comportament que un switch i MPLS VPN que un",
+        "times_asked": 0
+    },
+    {
+        "question": "Què és un LSR en MPLS?",
+        "options": [
+            "Un LSR només pot ser un router, ja que ha d’implementar funcions de Routing.",
+            "Un LSR és un dispositiu MPLS que només implementa distribución d’etiquetes, però  no reenvía paquets de dades.",
+            "Un LSR és tant un switch i un router ja que implementa ambues funcionalitats.",
+            "Un LSR només pot ser un switch, perquè ha de commutar les etiquetes dels paquets  que rep."
+        ],
+        "answer": "Els routers CE desconeixen totalment l’arquitectura MPLS VPN.",
+        "times_asked": 0
+    },
+    {
+        "question": "En implementar MPLS-VPNs, quina afirmació és incorrecta?",
+        "options": [
+            "Els clients poden utilizar diferents protocols de routing en les seves xarxes.",
+            "La xarxa MPLS transporta la información de routing dels clients.",
+            "L’operador implementa un protocol de routing específic per cada client.",
+            "Cal utilizar un únic protocol de routing entre nodes PE."
+        ],
+        "answer": "La capçalera MPLS inclou un camp EXP de protecció d’errors.",
+        "times_asked": 0
+    },
+    {
+        "question": "Pel que fa a Serveis MPLS, quina afirmació és correcta?",
+        "options": [
+            "La tecnología Carrier Ethernet té el mateix comportament que un switch i un  Pseudowire que un router.",
+            "La tecnología VPLS té el mateix comportament que un switch i Metro Ethernet que  un router.",
+            "La tecnología Metro Ethernet té el mateix comportament que un switch i VPLS que  un router.",
+            "La tecnología VPLS té el mateix comportament que un switch i MPLS VPN que un  router."
+        ],
+        "answer": "Les funcions de hash transformen un missatge de longitud arbitrària de forma",
+        "times_asked": 0
+    },
+    {
+        "question": "Quina aformació és certa respecte els routers CE en una arquitectura MPLS VPN?",
+        "options": [
+            "Els routers CE són els iniciadors dels tunnels LSPs.",
+            "Els routers CE poden participar en l’intercanvi d’etiquetes MPLS.",
+            "Els routers CE desconeixen totalment l’arquitectura MPLS VPN.",
+            "Els routers CE implementen PHB."
+        ],
+        "answer": "Implementa túnels VTEP entre 2 ordinadors remots (router o switch).",
+        "times_asked": 0
+    },
+    {
+        "question": "Indica l’afirmació incorrecta sobre la trama 5 de la següent captura:",
+        "options": [
+            "Hem capturat un paquet IP transportat sobre MPLS on el nivell 2 és Ethernet.",
+            "Hem capturat un missatge “Echo request” de ICMP.",
+            "La capçalera MPLS inclou un camp EXP de protecció d’errors.",
+            "Podem observar com en el cas de MPLS sobre Ethernet si que s’utilitza la capçalera  MPLS."
+        ],
+        "answer": "SD-WAN és una tecnologia que permet a l’usuari beneficiar-se de diferents",
+        "times_asked": 0
+    },
+    {
+        "question": "Quina afirmació és incorrecta pel que fa a VXLAN?",
+        "options": [
+            "Permet connectar diferents màquines a la mateixa VLAN quan hi ha una xarxa de  nivell 3 entre mig.",
+            "Implementa túnels VTEP entre 2 ordinadors remots (router o switch).",
+            "Encapsula les trames en UDP+IP per poder enviar el tràfic.",
+            "Utilitza identificadors de 24 bits com VNI (VXLAN Network Identifier)."
+        ],
+        "answer": "Interconnecta equips de diferents fabricants de manera completament transparent",
+        "times_asked": 0
     }
 ]
