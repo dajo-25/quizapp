@@ -138,6 +138,9 @@ function selectOption(btn, q) {
         score.incorrect++;
         // ara cerquem per data-option
         const correctBtn = allButtons.find(b => b.dataset.option === correctAnswer);
+
+        console.log(b.dataset.option);
+        console.log(correctAnswer);
         if (correctBtn) {
             correctBtn.classList.add('correct');
         } else {
