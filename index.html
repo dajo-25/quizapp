@@ -4,15 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz 10 preguntes</title>
+    <title>Quiz 20 preguntes</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="container">
-        <div id="quiz"></div>
-        <button id="next-btn">Següent</button>
-        <div id="result" class="hidden"></div>
+        <!-- Pantalla de Quiz -->
+        <div id="quiz-screen">
+            <div id="progress">Pregunta <span id="current-num">1</span> de <span id="total-num">20</span></div>
+            <div id="question" class="question"></div>
+            <ul id="options" class="options"></ul>
+            <button id="next-btn" disabled>Següent</button>
+            <div id="scoreboard">Score: <span id="score-correct">0</span> | <span id="score-incorrect">0</span> | <span
+                    id="score-blank">0</span></div>
+        </div>
+
+        <!-- Pantalla de Resultats -->
+        <div id="result-screen" class="hidden">
+            <h2>📊 Resultats finals</h2>
+            <p>✅ Encerts: <span id="final-correct"></span></p>
+            <p>❌ Errors: <span id="final-incorrect"></span></p>
+            <p>➖ En blanc: <span id="final-blank"></span></p>
+            <p>📝 Nota final: <span id="final-score"></span> /5</p>
+            <p>📉 Nota mitjana: <span id="avg-score"></span> /5</p>
+            <button id="retry-btn">Tornar a començar</button>
+        </div>
     </div>
     <script src="app.js"></script>
 </body>

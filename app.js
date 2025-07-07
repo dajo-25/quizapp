@@ -1,68 +1,168 @@
+const DATA_KEY = 'quiz_questions';
+const RESULTS_KEY = 'quiz_results';
+const TOTAL_QUESTIONS = 20;
+
 let questions = [];
-let currentQuestions = [];
-let currentIndex = 0;
-let score = 0;
+let selectedQs = [];
+let currentIdx = 0;
+let score = { correct: 0, incorrect: 0, blank: 0 };
 
-const quizEl = document.getElementById('quiz');
-const nextBtn = document.getElementById('next-btn');
-const resultEl = document.getElementById('result');
+const els = {
+    quizScreen: document.getElementById('quiz-screen'),
+    resultScreen: document.getElementById('result-screen'),
+    question: document.getElementById('question'),
+    options: document.getElementById('options'),
+    nextBtn: document.getElementById('next-btn'),
+    progress: {
+        current: document.getElementById('current-num'),
+        total: document.getElementById('total-num')
+    },
+    scoreboard: {
+        correct: document.getElementById('score-correct'),
+        incorrect: document.getElementById('score-incorrect'),
+        blank: document.getElementById('score-blank')
+    },
+    result: {
+        correct: document.getElementById('final-correct'),
+        incorrect: document.getElementById('final-incorrect'),
+        blank: document.getElementById('final-blank'),
+        score: document.getElementById('final-score'),
+        avg: document.getElementById('avg-score')
+    },
+    retryBtn: document.getElementById('retry-btn'),
+};
 
-// Carreguem el JSON de preguntes
-fetch('questions.json')
-    .then(res => res.json())
-    .then(data => {
-        questions = data;
-        startQuiz();
-    });
+els.progress.total.textContent = TOTAL_QUESTIONS;
+
+document.addEventListener('DOMContentLoaded', async () => {
+    questions = await loadQuestions();
+    if (questions.length < TOTAL_QUESTIONS) {
+        alert(`⚠️ Cal almenys ${TOTAL_QUESTIONS} preguntes; n'hi ha ${questions.length}.`);
+        return;
+    }
+    startQuiz();
+});
+
+els.nextBtn.addEventListener('click', handleNext);
+els.retryBtn.addEventListener('click', () => startQuiz());
+
+async function loadQuestions() {
+    const stored = localStorage.getItem(DATA_KEY);
+    if (stored) return JSON.parse(stored);
+    const res = await fetch('questions.json');
+    const data = await res.json();
+    localStorage.setItem(DATA_KEY, JSON.stringify(data));
+    return data;
+}
+
+function saveQuestions(qs) {
+    localStorage.setItem(DATA_KEY, JSON.stringify(qs));
+}
+
+function weightedSample(questions, n) {
+    const maxAsked = Math.max(...questions.map(q => q.times_asked)) + 1;
+    const weighted = questions.map(q => ({ q, weight: maxAsked - q.times_asked }));
+    const selected = [];
+    const available = [...weighted];
+    while (selected.length < n && available.length) {
+        const total = available.reduce((sum, el) => sum + el.weight, 0);
+        let pick = Math.random() * total;
+        for (let i = 0; i < available.length; i++) {
+            pick -= available[i].weight;
+            if (pick <= 0) {
+                selected.push(available[i].q);
+                available.splice(i, 1);
+                break;
+            }
+        }
+    }
+    return selected;
+}
+
+function saveResult(encerts, errors, enBlank, nota) {
+    const stored = localStorage.getItem(RESULTS_KEY);
+    const results = stored ? JSON.parse(stored).filter(r => !r._nota_mitjana) : [];
+    results.push({ encerts, errors, en_blanc: enBlank, nota: Math.round(nota * 100) / 100 });
+    const sum = results.reduce((s, r) => s + r.nota, 0);
+    const mitjana = Math.round((sum / results.length) * 100) / 100;
+    results.push({ _nota_mitjana: mitjana });
+    localStorage.setItem(RESULTS_KEY, JSON.stringify(results));
+    return mitjana;
+}
 
 function startQuiz() {
-    currentQuestions = shuffle([...questions]).slice(0, 10);
-    currentIndex = 0;
-    score = 0;
+    selectedQs = weightedSample(questions, TOTAL_QUESTIONS);
+    currentIdx = 0;
+    score = { correct: 0, incorrect: 0, blank: 0 };
+    els.quizScreen.classList.remove('hidden');
+    els.resultScreen.classList.add('hidden');
+    updateScoreboard();
     showQuestion();
 }
 
 function showQuestion() {
-    nextBtn.disabled = true;
-    resultEl.classList.add('hidden');
-    const q = currentQuestions[currentIndex];
-    quizEl.innerHTML = `
-    <div class="question">${q.question}</div>
-    <ul class="options">
-      ${['A', 'B', 'C', 'D'].map(letter =>
-        `<li><button data-letter="${letter}">${letter}. ${q.options[letter]}</button></li>`
-    ).join('')}
-    </ul>
-  `;
-    document.querySelectorAll('.options button').forEach(btn => {
-        btn.addEventListener('click', () => {
-            document.querySelectorAll('.options button').forEach(b => b.classList.remove('selected'));
-            btn.classList.add('selected');
-            nextBtn.disabled = false;
-        });
+    els.nextBtn.disabled = true;
+    const q = selectedQs[currentIdx];
+    els.progress.current.textContent = currentIdx + 1;
+    els.question.textContent = q.question;
+    const opts = shuffle([...q.options]);
+    els.options.innerHTML = '';
+    opts.forEach(opt => {
+        const btn = document.createElement('button');
+        btn.textContent = opt;
+        btn.addEventListener('click', () => selectOption(btn, q));
+        const li = document.createElement('li');
+        li.appendChild(btn);
+        els.options.appendChild(li);
     });
 }
 
-nextBtn.addEventListener('click', () => {
-    const selectedBtn = document.querySelector('.options button.selected');
-    const answer = selectedBtn.getAttribute('data-letter');
-    if (answer === currentQuestions[currentIndex].answer) score++;
-    currentIndex++;
-    if (currentIndex < currentQuestions.length) showQuestion();
-    else showResult();
-});
-
-function showResult() {
-    quizEl.innerHTML = '';
-    nextBtn.classList.add('hidden');
-    resultEl.textContent = `Has encertat ${score} de ${currentQuestions.length}`;
-    resultEl.classList.remove('hidden');
+function selectOption(btn, q) {
+    Array.from(els.options.querySelectorAll('button')).forEach(b => b.disabled = true);
+    const isCorrect = btn.textContent === q.answer;
+    if (isCorrect) {
+        btn.classList.add('correct');
+        score.correct++;
+    } else {
+        btn.classList.add('incorrect');
+        score.incorrect++;
+        Array.from(els.options.querySelectorAll('button')).find(b => b.textContent === q.answer).classList.add('correct');
+    }
+    els.nextBtn.disabled = false;
+    updateScoreboard();
+    const orig = questions.find(item => item.question === q.question);
+    if (orig) orig.times_asked++;
 }
 
-function shuffle(arr) {
-    for (let i = arr.length - 1; i > 0; i--) {
+function handleNext() {
+    currentIdx++;
+    if (currentIdx < selectedQs.length) showQuestion();
+    else finishQuiz();
+}
+
+function finishQuiz() {
+    els.quizScreen.classList.add('hidden');
+    els.resultScreen.classList.remove('hidden');
+    const nota = Math.max(0, Math.min(5, score.correct * 0.25 - score.incorrect * 0.083));
+    const avg = saveResult(score.correct, score.incorrect, score.blank, nota);
+    els.result.correct.textContent = score.correct;
+    els.result.incorrect.textContent = score.incorrect;
+    els.result.blank.textContent = score.blank;
+    els.result.score.textContent = nota.toFixed(2);
+    els.result.avg.textContent = avg.toFixed(2);
+    saveQuestions(questions);
+}
+
+function updateScoreboard() {
+    els.scoreboard.correct.textContent = score.correct;
+    els.scoreboard.incorrect.textContent = score.incorrect;
+    els.scoreboard.blank.textContent = score.blank;
+}
+
+function shuffle(a) {
+    for (let i = a.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
-        [arr[i], arr[j]] = [arr[j], arr[i]];
+        [a[i], a[j]] = [a[j], a[i]];
     }
-    return arr;
+    return a;
 }
